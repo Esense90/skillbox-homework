@@ -30,6 +30,36 @@
   font-style: normal;
 }
 
+.body {
+  width: 1920px;
+  margin: 0 auto;
+  color: #F1F1F1;
+}
 
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 261px;
+  height: 54px;
+  margin-top: 30px;
+}
+
+.number-phone {
+  padding-left: 40px;
+  width: 164px;
+  height: 20px;
+  left: 676px;
+  top: 47px;
+}
+
+.phone {
+  font-family: 'MullerMedium';
+  font-size: 20px;
+  color: #666666;
+  text-decoration: none;
+}
 
 

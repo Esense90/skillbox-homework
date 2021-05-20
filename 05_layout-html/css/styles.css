@@ -30,36 +30,53 @@
   font-style: normal;
 }
 
-.body {
-  width: 1920px;
-  margin: 0 auto;
-  color: #F1F1F1;
+* {
+  box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #F1F1F1;
+}
+
+.header {
+ width: 1170px;
+ margin: 0 auto;
+} 
 
 .container {
   width: 1170px;
   margin: 0 auto;
 }
 
-.logo {
-  width: 261px;
-  height: 54px;
+.header-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 30px;
 }
 
-.number-phone {
-  padding-left: 40px;
-  width: 164px;
-  height: 20px;
-  left: 676px;
-  top: 47px;
+.header-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .phone {
+  margin-left: 34px;
   font-family: 'MullerMedium';
   font-size: 20px;
   color: #666666;
-  text-decoration: none;
 }
 
-
+.area {
+  text-decoration: none;
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+}

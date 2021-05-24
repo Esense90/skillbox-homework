@@ -98,17 +98,36 @@ body {
 
 .special {
   display: flex;
-
 }
 
 .special-card1 {
   min-width: 573px;
 }
 
-.main-servises-list {
-  display: flex;
-
+.servises-list-items {
+  max-width: 573px;
 }
 
+.main-servises-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+.advantages-list-items {
+  max-width: 275px;
+}
+
+.placing-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}

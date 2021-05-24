@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'MullerBold';
+  src: url(../fonts/MullerBold.woff),
+    url(../fonts/MullerBold.woff2);
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MullerLight';
+  src: url(../fonts/MullerLight.woff),
+    url(../fonts/MullerLight.woff2);
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MullerMedium';
+  src: url(../fonts/MullerMedium.woff),
+    url(../fonts/MullerMedium.woff2);
+  font-display: swap;
+  font-style: normal;
+}
+
+  @font-face {
+  font-family: 'MullerRegular';
+  src: url(../fonts/MullerRegular.woff),
+    url(../fonts/MullerRegular.woff2);
+  font-display: swap;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  margin-top: 30px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-top-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+.phone {
+  color: #666666;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 57px;
+}
+
+.header-lists {
+  display: flex;
+}
+
+.nav-item {
+  padding-right: 47px;
+}
+
+.main-special {
+  margin-top: 97px;
+}
+
+.special {
+  display: flex;
+
+}
+
+.special-card1 {
+  min-width: 573px;
+}
+
+.main-servises-list {
+  display: flex;
+
+}
+
+
+

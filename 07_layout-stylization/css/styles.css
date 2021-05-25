@@ -62,6 +62,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .header-top-left {
@@ -76,12 +77,32 @@ body {
 
 .phone {
   color: #666666;
+  font-family: 'MullerMedium';
+  font-size: 20px;
+}
+
+.area {
+  color: #CC9933;
+  font-size: 16px;
+  font-family: 'MullerRegular';
+  background-image: url(../img/Vector.svg);
+  background-repeat: no-repeat;
+  padding-left: 29px;
 }
 
 .header-bottom {
   display: flex;
   justify-content: space-between;
-  margin-top: 57px;
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 14px 45px;
+}
+
+.header-nav {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  border-right: 1px solid #E1E1E1;
 }
 
 .header-lists {
@@ -90,6 +111,36 @@ body {
 
 .nav-item {
   padding-right: 47px;
+}
+
+.nav-items {
+  font-size: 16px;
+  font-family: 'MullerRegular';
+  color: #666666;
+}
+
+.header-bottom-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-btn-right {
+  color: #CC9933;
+  font-size: 16px;
+  font-family: 'MullerRegular';
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  padding: 13px 20px;
+  margin-right: 40px;
+}
+
+.header-btn-left {
+  color: #CC9933;
+  font-size: 16px;
+  font-family: 'MullerRegular';
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  padding: 13px 20px;
 }
 
 .main-special {

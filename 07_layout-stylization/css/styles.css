@@ -95,7 +95,7 @@ body {
   justify-content: space-between;
   border-radius: 15px;
   background-color: #fff;
-  padding: 14px 45px;
+  padding: 10px 45px;
 }
 
 .header-nav {
@@ -147,12 +147,121 @@ body {
   margin-top: 70px;
 }
 
-.special {
+.main-special-title {
+  font-family: 'MullerRegular';
+  font-size: 40px;
+  margin-left: 40px;
+  color: #333;
+}
+
+.special-cards {
   display: flex;
 }
 
+.special-cards-left {
+  width: 573px;
+}
+
 .special-card1 {
-  min-width: 573px;
+  min-height: 258px;
+  background-image: url(../img/Rectangle\ 14.png);
+}
+
+.special-card2 {
+  min-height: 258px;
+  margin-top: 23px;
+  background-image: url(../img/Rectangle\ 16.png);
+}
+
+.special-title-card {
+  font-size: 40px;
+  color: #fff;
+  font-family: 'MullerBold';
+  line-height: 40px;
+  padding-left: 40px;
+  padding-top: 40px;
+  width: 339px;
+  margin: 0;
+}
+
+.special-price-card {
+  font-family: 'MullerLight';
+  font-size: 20px;
+  opacity: 80%;
+  color: #fff;
+  padding-left: 40px;
+  padding-top: 15px;
+  padding-bottom: 47px;
+}
+
+.special-link-card {
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  color: #FFCC66;
+  padding-left: 40px;
+  background-image: url(../img/Rectangle\ 2.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-right: 14.28px;
+} 
+
+.special-card3 {
+  margin-left: 23px;
+  background-image: url(../img/33_1.png);
+  width: 573px;
+}
+
+.special-title-card3 {
+  font-family: 'MullerRegular';
+  font-size: 60px;
+  line-height: 60px;
+  color: #fff;
+  width: 339px;
+  min-height: 180px;
+  margin: 0;
+  padding-top: 211px;
+  padding-left: 40px;
+}
+
+.special-price-card3 {
+  font-family: 'MullerRegular';
+  font-size: 30px;
+  color: #fff;
+  padding-left: 40px;
+  padding-top: 15px;
+  padding-bottom: 41px;
+  opacity: 0.8;
+}
+
+.special-link-card3 {
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  color: #FFCC66;
+  padding-left: 40px;
+  background-image: url(../img/Rectangle\ 2.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-right: 14.28px;
+}
+
+.main-text {
+  margin-top: 69px;
+}
+
+.main-text-title {
+  margin: 0;
+  margin-left: 40px;
+  font-family: 'MullerRegular';
+  font-size: 40px;
+  color: #333;
+}
+
+.main-text-excerpt {
+  font-family: 'MullerRegular';
+  font-size: 16px;  
+  line-height: 32px;
+  width: 888px;
+  margin-bottom: 70px;
 }
 
 .servises-list-items {

@@ -148,7 +148,7 @@ body {
 }
 
 .main-special-title {
-  font-family: 'MullerRegular';
+  font-family: 'MullerLight';
   font-size: 40px;
   margin-left: 40px;
   color: #333;
@@ -251,7 +251,7 @@ body {
 .main-text-title {
   margin: 0;
   margin-left: 40px;
-  font-family: 'MullerRegular';
+  font-family: 'MullerLight';
   font-size: 40px;
   color: #333;
 }
@@ -264,8 +264,11 @@ body {
   margin-bottom: 70px;
 }
 
-.servises-list-items {
-  max-width: 573px;
+.main-servises-title {
+  font-family: 'MullerLight';
+  font-size: 40px;
+  margin-left: 40px;
+  color: #333;
 }
 
 .main-servises-list {
@@ -273,6 +276,66 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.servises-list-items {
+  max-width: 572px;
+  min-height: 330px;
+  flex-basis: 50%;
+  background-color: #fff;
+  border-radius: 15px 15px 15px 15px;
+  margin-bottom: 23px;
+}
+
+.items-img1 {
+  background-image: url(../img/10.jpg);
+  min-height: 165px;
+  border-radius: 15px 15px 0px 0px;
+  background-repeat: no-repeat;
+}
+
+.items-img2 {
+  background-image: url(../img/15.jpg);
+  min-height: 165px;
+  border-radius: 15px 15px 0px 0px;
+  background-repeat: no-repeat;
+}
+
+.items-img3 {
+  background-image: url(../img/12.jpg);
+  min-height: 165px;
+  border-radius: 15px 15px 0px 0px;
+  background-repeat: no-repeat;
+}
+
+.items-img4 {
+  background-image: url(../img/50.jpg);
+  min-height: 165px;
+  border-radius: 15px 15px 0px 0px;
+  background-repeat: no-repeat;
+}
+
+.servises-items-info {
+  padding-top: 35px;
+  padding-left: 45px;
+}
+
+.servises-items-subtitle {
+  font-family: 'MullerLight';
+  font-size: 20px;
+  font-weight: bold;
+  color: #CC9933;
+  padding-right: 20px;
+  background-image: url(../img/Rectangle\ 2.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.servises-items-text {
+  font-family: 'MullerMedium';
+  font-size: 16px;
+  line-height: 200%;
+  width: 402px;
 }
 
 .advantages-list {

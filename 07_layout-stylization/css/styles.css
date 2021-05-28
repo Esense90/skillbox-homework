@@ -338,6 +338,16 @@ body {
   width: 402px;
 }
 
+.main-advantages-title {
+  margin: 0;
+  margin-top: 47px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  font-family: 'MullerLight';
+  font-size: 40px;
+  color: #333;
+}
+
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
@@ -347,10 +357,138 @@ body {
 
 .advantages-list-items {
   max-width: 275px;
+  min-height: 275px;
+  background-color: #fff;
+  margin-bottom: 23px;
+  border-radius: 15px;
 }
 
-.placing-list {
+.advantages-list-img {
+  min-width: 64px;
+  min-height: 66px;
+  margin: 40px 0 0 45px;
+  background-repeat: no-repeat;
+}
+
+.advantages-list-img1 { background-image: url(../img/bathtub.svg); }
+.advantages-list-img2 { background-image: url(../img/hanger.svg); }
+.advantages-list-img3 { background-image: url(../img/heating.svg); }
+.advantages-list-img4 { background-image: url(../img/hotel-key.svg); }
+.advantages-list-img5 { background-image: url(../img/parking.svg); }
+.advantages-list-img6 { background-image: url(../img/reception.svg); }
+.advantages-list-img7 { background-image: url(../img/security-box.svg); }
+.advantages-list-img8 { background-image: url(../img/swimming-pool.svg); }
+
+.advantages-list-text {
+  font-family: 'MullerMedium';
+  font-size: 16px;
+  line-height: 32px;
+  margin: 13px 42px 40px 45px;
+ }
+
+ .main-placing-title {
+   margin: 47px 0 30px 40px;
+   font-family: 'MullerLight';
+   font-size: 40px;
+   color: #333;
+ }
+
+ .placing-list-items {
+   width: 374px;
+   min-height: 440px;
+   margin-bottom: 23px;
+   background-color: #fff;
+   border-radius: 15px;
+ }
+
+ .placing-list-img {
+   display: block;
+ }
+
+ .placing-list-items-text {
+   margin: 36px 0 0 45px;
+   font-size: 20px;
+   font-family: 'MullerMedium';
+   color: #999999;
+ }
+
+ .placing-items-star {
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-between;
+   align-items: baseline;
+ }
+
+ .items-star {
+   padding-right: 46px;
+ }
+ 
+ .placing-text-price {
+   color: black;
+ }
+
+ .placing-text-night {
+   color: black;
+   font-size: 17px;
+ }
+
+ .placing-items-of {
+   font-size: 16px;
+   font-family: 'MullerRegular';
+ }
+
+ .placing-list-items-last {
+  width: 374px;
+  min-height: 440px;
+  margin-bottom: 23px;
+  border-radius: 15px;
+  background-image: url(../img/41.png);
+}
+
+.items-name-hotel {
+  margin: 16px 0 0 45px;
+  font-family: 'MullerMedium';
+  font-size: 16px;
+}
+
+.items-country-hotel {
+  margin: 16px 0 0 45px;
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  color: #999999;
+}
+
+.items-numbers-hotel-btn {
+  margin: 16px 0 0 45px;
+  padding: 13px 20px 13px 20px;
+  border-radius: 10px;
+  border: 1px solid #CC9933;
+  background-color: #fff;
+  font-size: 16px;
+  font-family: 'MullerRegular';
+  color: #CC9933;
+}
+
+.placing-list-items-last {
+  display: flex;
+  align-items: flex-end;
+}
+
+.placing-items-last-text {
+  font-family: 'MullerRegular';
+  font-size: 20px;
+  color: #fff;
+  margin: 0 0 35px 54px;
+  background-image: url(../img/Rectangle_2.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  padding-right: 20px;
+  line-height: 1;
+}
+
+ .placing-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-between;
 }

@@ -495,7 +495,7 @@ body {
 
 .main-toor {
   margin-top: 47px;
-  padding: 38px 45px 71px 45px;
+  padding: 36px 45px 68px 45px;
   border: 1px solid #e5e5e5;
   background-color: #e5e5e5;
   border-radius: 15px;
@@ -510,14 +510,107 @@ body {
 
 .main-toor-form {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 31px 58px 32px 28px;
+  padding: 25px 28px 26px 28px;
   border: 1px solid #fff;
   background-color: #fff;
   border-radius: 15px;
 }
 
+input, select {
+  border: none;
+  appearance: none;
+}
 
+.main-form-label {
+  font-family: 'MullerRegular';
+  font-size: 12px;
+}
 
+.form-city {
+  margin-top: 13px;
+  font-family: 'MullerRegular';
+  font-size: 16px;
+}
 
+.form-country {
+  margin-top: 13px;
+  font-family: 'MullerRegular';
+  font-size: 16px;
+}
 
+.form-date {
+  margin-top: 13px;
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  width: 141px;
+}
+
+.form-night {
+  margin-top: 13px;
+  width: 121px;
+  font-family: 'MullerRegular';
+  font-size: 16px;
+}
+
+.form-tourists {
+  margin-top: 13px;
+  width: 141px;
+  font-family: 'MullerRegular';
+  font-size: 16px;
+}
+
+.arrow-city {
+  background-image: url(../img/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  padding-right: 28px;
+}
+
+.arrow-country {
+  background-image: url(../img/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  padding-right: 77px;
+}
+
+.main-form-city {
+  width: 175px;
+  border-right: 1px solid #E1E1E1;
+}
+
+.main-form-country {
+  margin-left: 10px;
+  width: 170px;
+  border-right: 1px solid #E1E1E1;
+}
+
+.main-form-date {
+  margin-left: 20px;
+  width: 165px;
+  border-right: 1px solid #E1E1E1;
+}
+
+.main-form-night {
+  margin-left: 20px;
+  width: 150px;
+  border-right: 1px solid #E1E1E1;
+}
+
+.main-form-tourists {
+  margin-left: 20px;
+  width: 160px;
+  border-right: 1px solid #E1E1E1;
+}
+
+.btn-search {
+  border: none;  
+  padding: 13px 20px 13px 20px;
+  border-radius: 10px;
+  border: 1px solid #CC9933;
+  background-color: #fff;
+  font-size: 16px;
+  font-family: 'MullerRegular';
+  color: #CC9933;
+}  

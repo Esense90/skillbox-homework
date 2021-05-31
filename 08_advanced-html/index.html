@@ -320,42 +320,42 @@
         <div class="main-toor">
           <h2 class="main-toor-title">Хочу тур</h2>
           <form class="main-toor-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-            <div>
-              <label>
+            <div class="main-form-city">
+              <label class="main-form-label">
                 Город вылета
               </label>
-              <select>
+              <select class="form-city arrow-city">
                 <option selected value="selected">Санкт-Петербург</option>
               </select>
             </div>
-            <div>
-              <label>
+            <div class="main-form-country">
+              <label class="main-form-label">
                 Страна
               </label>
-              <select>
+              <select class="form-country arrow-country">
                 <option selected value="selected">Австралия</option>
               </select>
             </div>
-            <div>
-              <label>
+            <div class="main-form-date">
+              <label class="main-form-label">
                 Дата прибытия
               </label>
-              <input type="date" name="date">
+              <input class="form-date" type="date" name="date">
             </div>
-            <div>
-              <label>
+            <div class="main-form-night">
+              <label class="main-form-label">
                 Ночей
               </label>
-              <input type="number" placeholder="Количество" name="night">
+              <input class="form-night" type="number" placeholder="Количество" name="night">
             </div>
-            <div>
-              <label>
+            <div class="main-form-tourists">
+              <label class="main-form-label">
                 Туристы
               </label>
-              <input required type="number" placeholder="Количество" name="tourists">
+              <input class="form-tourists" required type="number" placeholder="Количество" name="tourists">
             </div>
-            <div>
-              <button type="submit"></button>
+            <div class="main-form-btn">
+              <button class="btn-search" type="submit">Найти</button>
             </div>
           </form>
         </div>

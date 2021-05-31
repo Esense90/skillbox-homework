@@ -316,43 +316,43 @@
           </li>
         </ul>
       </section>
-      <section class="main-toor">
-        <div class="toor">
-          <h2>Хочу тур</h2>
-          <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+      <section class="main-toor-sect">
+        <div class="main-toor">
+          <h2 class="main-toor-title">Хочу тур</h2>
+          <form class="main-toor-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
             <div>
               <label>
                 Город вылета
-                <select>
-                  <option selected value="selected">Санкт-Петербург</option>
-                </select>
               </label>
+              <select>
+                <option selected value="selected">Санкт-Петербург</option>
+              </select>
             </div>
             <div>
               <label>
                 Страна
-                <select>
-                  <option selected value="selected">Австралия</option>
-                </select>
               </label>
+              <select>
+                <option selected value="selected">Австралия</option>
+              </select>
             </div>
             <div>
               <label>
                 Дата прибытия
-                <input type="date" name="date">
               </label>
+              <input type="date" name="date">
             </div>
             <div>
               <label>
                 Ночей
-                <input type="number" placeholder="Количество" name="night">
               </label>
+              <input type="number" placeholder="Количество" name="night">
             </div>
             <div>
               <label>
                 Туристы
-                <input required type="number" placeholder="Количество" name="tourists">
               </label>
+              <input required type="number" placeholder="Количество" name="tourists">
             </div>
             <div>
               <button type="submit"></button>

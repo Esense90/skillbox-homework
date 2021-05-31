@@ -565,14 +565,14 @@ input, select {
   background-image: url(../img/arrow.svg);
   background-repeat: no-repeat;
   background-position: center right;
-  padding-right: 28px;
+  padding-right: 25px;
 }
 
 .arrow-country {
   background-image: url(../img/arrow.svg);
   background-repeat: no-repeat;
   background-position: center right;
-  padding-right: 77px;
+  padding-right: 65px;
 }
 
 .main-form-city {
@@ -581,36 +581,81 @@ input, select {
 }
 
 .main-form-country {
-  margin-left: 10px;
-  width: 170px;
-  border-right: 1px solid #E1E1E1;
-}
-
-.main-form-date {
-  margin-left: 20px;
   width: 165px;
   border-right: 1px solid #E1E1E1;
 }
 
+.main-form-date {
+  width: 155px;
+  border-right: 1px solid #E1E1E1;
+}
+
 .main-form-night {
-  margin-left: 20px;
   width: 150px;
   border-right: 1px solid #E1E1E1;
 }
 
 .main-form-tourists {
-  margin-left: 20px;
   width: 160px;
   border-right: 1px solid #E1E1E1;
 }
 
 .btn-search {
-  border: none;  
-  padding: 13px 20px 13px 20px;
+  border: none;
+  padding: 13px 30px 13px 30px;
   border-radius: 10px;
   border: 1px solid #CC9933;
   background-color: #fff;
   font-size: 16px;
   font-family: 'MullerRegular';
   color: #CC9933;
-}  
+}
+
+.main-contacts-title {
+  margin: 0;
+  margin-top: 70px;
+  margin-left: 40px;
+  font-family: 'MullerLight';
+  font-size: 40px;
+  color: #333333;
+}
+
+.main-contacts-table {
+  padding: 44px 44px 46px 46px;
+  width: 1168px;
+  min-height: 618px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  background-image: url(../img/Layer_2.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 470px;
+}
+
+.main-contacts {
+  display: flex;
+  width: 375px;
+  min-height: 71px;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+p {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  font-family: 'MullerBold';
+  font-size: 20px;
+}
+
+.contacts-adress {
+  padding-left: 83px;
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  line-height: 150%;
+}
+
+

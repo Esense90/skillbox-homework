@@ -679,12 +679,6 @@ h3 {
   padding-bottom: 7px;
 }
 
-.email {
-  font-family: 'MullerRegular';
-  font-size: 16px;
-  color: #CC9933; 
-}
-
 .email-sub {
   font-family: 'MullerRegular';
   font-size: 16px;
@@ -694,6 +688,12 @@ h3 {
 .contacts-email {
   margin-right: 8px;
   line-height: 150%;
+}
+
+.contacts-link-email {
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  color: #CC9933;
 }
 
 .contacts-graph {
@@ -760,10 +760,17 @@ h3 {
   margin-top: 14px;
 }
 
-.footer-email {
+.footer-emails {
   display: flex;
   flex-direction: column;
   margin-top: 15px;
+}
+
+.emails {
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  color: #CC9933;
+  line-height: 25px;
 }
 
 .adress {

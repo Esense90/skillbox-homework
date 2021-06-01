@@ -50,6 +50,7 @@ body {
 
 .container {
   max-width: 1170px;
+  min-height: 5753px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -618,6 +619,7 @@ input, select {
   font-family: 'MullerLight';
   font-size: 40px;
   color: #333333;
+  margin-bottom: 26px;
 }
 
 .main-contacts-table {
@@ -626,6 +628,7 @@ input, select {
   min-height: 618px;
   border: 1px solid #fff;
   background-color: #fff;
+  border-radius: 15px;
   background-image: url(../img/Layer_2.png);
   background-repeat: no-repeat;
   background-position: right;
@@ -636,6 +639,7 @@ input, select {
   display: flex;
   width: 375px;
   min-height: 71px;
+  margin-top: 25px;
   align-items: baseline;
   justify-content: space-between;
   border-bottom: 1px solid #C4C4C4;
@@ -658,4 +662,132 @@ h3 {
   line-height: 150%;
 }
 
+.contacts-tel {
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+}
 
+.phone {
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+}
+
+.email {
+  padding-bottom: 7px;
+}
+
+.email {
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  color: #CC9933; 
+}
+
+.email-sub {
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  color: #999999;
+}
+
+.contacts-email {
+  margin-right: 8px;
+  line-height: 150%;
+}
+
+.contacts-graph {
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 74px;
+}
+
+.contacts-table-btn {
+  margin-top: 45px;
+  border: none;
+  padding: 26px 28px 26px 28px;
+  border-radius: 10px;
+  border: 1px solid #CC9933;
+  background-color: #fff;
+  font-size: 16px;
+  font-family: 'MullerBold';
+  color: #CC9933;
+}
+
+.footer-text {
+  display: flex;
+  margin-top: 19px;
+  padding: 43px 50px 45px 51px;
+  border: 1px solid #333;
+  background-color: #333;
+  min-height: 341px;
+  border-radius: 15px;
+}
+
+.footer-copyrite {
+  width: 320px;
+  min-height: 178px;
+}
+
+.footer-subtitle {
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  line-height: 30.4px;
+  color: #fff;
+}
+
+.footer-deal {
+  margin-top: 45px;
+}
+
+.deal {
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  color: #CC9933;
+}
+
+.adress-tel-email {
+  display: flex;
+  flex-direction: column;
+  margin-left: 102px;
+  padding-top: 5px;
+}
+
+.footer-tel {
+  display: flex;
+  flex-direction: column;
+  margin-top: 14px;
+}
+
+.footer-email {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.adress {
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer-img {
+  background-image: url(/08_advanced-html/img/footer_logo.png);
+  background-repeat: no-repeat;
+  width: 254.55px;
+  height: 254.77px;
+  margin-left: 264px;
+  position: absolute;
+  margin-top: 64px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  margin-left: 260px;
+}
+
+.footer-social a:not(:first-child) {
+  padding-top: 18px;
+}

@@ -798,3 +798,9 @@ h3 {
 .footer-social a:not(:first-child) {
   padding-top: 18px;
 }
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #CC9933;
+  color: #fff;
+}

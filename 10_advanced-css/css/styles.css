@@ -202,7 +202,7 @@ body {
   padding-left: 40px;
   background-image: url(../img/Rectangle\ 2.svg);
   background-repeat: no-repeat;
-  background-position:right;
+  background-position: right;
   padding-right: 14.28px;
 }
 
@@ -353,6 +353,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .advantages-list-items {
@@ -362,11 +363,6 @@ body {
   margin-bottom: 23px;
   border-radius: 15px;
 }
-
-.advantages-list-items:not(:nth-child(4n)) {
-  margin-right: 23px;
-}
-
 
 .advantages-list-img {
   min-width: 64px;
@@ -762,14 +758,12 @@ h3 {
   display: flex;
   flex-direction: column;
   margin-top: 14px;
-  width: 152px;
 }
 
 .footer-emails {
   display: flex;
   flex-direction: column;
   margin-top: 15px;
-  width: 133px;
 }
 
 .emails {
@@ -804,10 +798,3 @@ h3 {
 .footer-social a:not(:first-child) {
   padding-top: 18px;
 }
-
-.btn:hover {
-  transform: scale(1.1);
-  background-color: #CC9933;
-  color: #fff;
-}
-

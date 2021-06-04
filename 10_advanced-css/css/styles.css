@@ -30,15 +30,12 @@
   font-style: normal;
 }
 
-<<<<<<< HEAD
 :root {
   --color-orange: #CC9933;
   --color-light-orange: #FFCC66;
   --color-grey: #666;
 }
 
-=======
->>>>>>> 9c886458cb68fc45ea89a797db60c1ce8cafa263
 * {
   box-sizing: border-box;
 }

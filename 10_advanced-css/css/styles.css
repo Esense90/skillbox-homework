@@ -30,12 +30,6 @@
   font-style: normal;
 }
 
-:root {
-  --color-orange: #CC9933;
-  --color-light-orange: #FFCC66;
-  --color-grey: #666;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -82,10 +76,6 @@ body {
   text-decoration: none;
 }
 
-.logo:hover {
-  border-bottom:none;
-}
-
 .phone {
   color: #666666;
   font-family: 'MullerMedium';
@@ -93,13 +83,11 @@ body {
 }
 
 .area {
-  padding: 5px 5px 2.5px 5px;
   color: #CC9933;
   font-size: 16px;
   font-family: 'MullerRegular';
   background-image: url(../img/Vector.svg);
   background-repeat: no-repeat;
-  background-position: left center;
   padding-left: 29px;
 }
 
@@ -167,56 +155,6 @@ body {
   color: #333;
 }
 
-.card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 15px;
-}
-
-.card1 {
-  position: relative;
-  overflow: hidden;
-  border-radius: 15px;
-}
-
-.card::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: transparent;
-  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
-  transform: translateX(-100%);
-  border-radius: 15px;
-  transition: transform .3s ease;
-}
-
-.card1::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: transparent;
-  background: linear-gradient(0deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
-  transform: translateY(100%);
-  border-radius: 15px;
-  transition: transform .3s ease;
-}
-
-.card:hover::after {
-  transform: translateX(0);
-}
-
-.card1:hover::after {
-  transform: translateY(0);
-}
-
 .special-cards {
   display: flex;
 }
@@ -245,8 +183,6 @@ body {
   padding-top: 40px;
   width: 339px;
   margin: 0;
-  position: relative;
-  z-index: 1;
 }
 
 .special-price-card {
@@ -257,21 +193,17 @@ body {
   padding-left: 40px;
   padding-top: 15px;
   padding-bottom: 47px;
-  position: relative;
-  z-index: 1;
 }
 
 .special-link-card {
-  margin-left: 40px;
   font-family: 'MullerRegular';
   font-size: 16px;
   color: #FFCC66;
-  padding-right: 14.28px;
+  padding-left: 40px;
   background-image: url(../img/Rectangle\ 2.svg);
   background-repeat: no-repeat;
-  background-position: right;
-  position: relative;
-  z-index: 1;
+  background-position:right;
+  padding-right: 14.28px;
 }
 
 .special-card3 {
@@ -290,8 +222,6 @@ body {
   margin: 0;
   padding-top: 211px;
   padding-left: 40px;
-  position: relative;
-  z-index: 1;
 }
 
 .special-price-card3 {
@@ -302,21 +232,17 @@ body {
   padding-top: 15px;
   padding-bottom: 41px;
   opacity: 0.8;
-  position: relative;
-  z-index: 1;
 }
 
 .special-link-card3 {
   font-family: 'MullerRegular';
   font-size: 16px;
   color: #FFCC66;
-  margin-left: 40px;
+  padding-left: 40px;
   background-image: url(../img/Rectangle\ 2.svg);
   background-repeat: no-repeat;
   background-position: right;
   padding-right: 14.28px;
-  position: relative;
-  z-index: 1;
 }
 
 .main-text {
@@ -429,10 +355,6 @@ body {
   flex-direction: row;
 }
 
-.advantages-list li:not(:nth-child(4n)) {
-  margin-right: 23px; 
-}
-
 .advantages-list-items {
   max-width: 275px;
   min-height: 275px;
@@ -440,6 +362,11 @@ body {
   margin-bottom: 23px;
   border-radius: 15px;
 }
+
+.advantages-list-items:not(:nth-child(4n)) {
+  margin-right: 23px;
+}
+
 
 .advantages-list-img {
   min-width: 64px;
@@ -550,7 +477,6 @@ body {
 .placing-list-items-last {
   display: flex;
   align-items: flex-end;
-  position: relative;
 }
 
 .placing-items-last-text {
@@ -563,17 +489,6 @@ body {
   background-position: center right;
   padding-right: 20px;
   line-height: 1;
-  position: relative;
-  z-index: 1;
-}
-
-.placing-items-last-text::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  left: 0;
 }
 
  .placing-list {
@@ -762,7 +677,6 @@ h3 {
   font-size: 16px;
   line-height: 150%;
   color: #CC9933;
-  width: auto;
 }
 
 .email {
@@ -848,14 +762,14 @@ h3 {
   display: flex;
   flex-direction: column;
   margin-top: 14px;
-  width: 155px;
+  width: 152px;
 }
 
 .footer-emails {
   display: flex;
   flex-direction: column;
   margin-top: 15px;
-  width: 132px;
+  width: 133px;
 }
 
 .emails {
@@ -893,14 +807,7 @@ h3 {
 
 .btn:hover {
   transform: scale(1.1);
-  transition: color 300ms linear;
   background-color: #CC9933;
   color: #fff;
-}
-
-a:hover {
-  transition: border .1s ease;
-  border-bottom: 2px solid #CC9933;
-  color: #CC9933;
 }
 

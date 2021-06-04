@@ -178,6 +178,7 @@ body {
   min-height: 258px;
   margin-top: 23px;
   background-image: url(../img/Rectangle\ 16.png);
+  position: relative;
 }
 
 .special-title-card {
@@ -816,35 +817,35 @@ h3 {
 }
 
 .component {
-  background-image: url(../img/component.png);
+  background-image: url(../img/component_1.svg);
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
 }
 
 .twitter {
-  background-image: url(../img/twitter.png);
+  background-image: url(../img/twitter_1.svg);
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
 }
 
 .facebook {
-  background-image: url(../img/facebook.png);
+  background-image: url(../img/facebook_1.svg);
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
 }
 
 .vkontakte {
-  background-image: url(../img/social.png);
+  background-image: url(../img/social_1.svg);
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
 }
 
 .instagram {
-  background-image: url(../img/instagram.png);
+  background-image: url(../img/instagram_1.svg);
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
@@ -874,3 +875,29 @@ h3 {
   transition: color .3s ease;
   color: #fff;
 }
+
+.component:hover {
+  transition: transform .3s ease-in-out;
+  transform: scale(1.2);
+}
+
+.twitter:hover {
+  transition: transform .3s ease-in-out;
+  transform: scale(1.2);
+}
+
+.facebook:hover {
+  transition: transform .3s ease-in-out;
+  transform: scale(1.2);
+}
+
+.instagram:hover {
+  transition: transform .3s ease-in-out;
+  transform: scale(1.2);
+}
+
+.vkontakte:hover {
+  transition: transform .3s ease-in-out;
+  transform: scale(1.2);
+}
+

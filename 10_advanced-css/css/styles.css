@@ -82,13 +82,10 @@ body {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
 .logo:hover {
   border-bottom:none;
 }
 
-=======
->>>>>>> 9c886458cb68fc45ea89a797db60c1ce8cafa263
 .phone {
   color: #666666;
   font-family: 'MullerMedium';
@@ -96,19 +93,13 @@ body {
 }
 
 .area {
-<<<<<<< HEAD
   padding: 5px 5px 2.5px 5px;
-=======
->>>>>>> 9c886458cb68fc45ea89a797db60c1ce8cafa263
   color: #CC9933;
   font-size: 16px;
   font-family: 'MullerRegular';
   background-image: url(../img/Vector.svg);
   background-repeat: no-repeat;
-<<<<<<< HEAD
   background-position: left center;
-=======
->>>>>>> 9c886458cb68fc45ea89a797db60c1ce8cafa263
   padding-left: 29px;
 }
 
@@ -176,7 +167,6 @@ body {
   color: #333;
 }
 
-<<<<<<< HEAD
 .card {
   position: relative;
   overflow: hidden;
@@ -227,16 +217,10 @@ body {
   transform: translateY(0);
 }
 
-=======
->>>>>>> 9c886458cb68fc45ea89a797db60c1ce8cafa263
 .special-cards {
   display: flex;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 9c886458cb68fc45ea89a797db60c1ce8cafa263
 .special-cards-left {
   width: 573px;
 }
@@ -261,11 +245,8 @@ body {
   padding-top: 40px;
   width: 339px;
   margin: 0;
-<<<<<<< HEAD
   position: relative;
   z-index: 1;
-=======
->>>>>>> 9c886458cb68fc45ea89a797db60c1ce8cafa263
 }
 
 .special-price-card {
@@ -276,7 +257,6 @@ body {
   padding-left: 40px;
   padding-top: 15px;
   padding-bottom: 47px;
-<<<<<<< HEAD
   position: relative;
   z-index: 1;
 }
@@ -292,19 +272,6 @@ body {
   background-position: right;
   position: relative;
   z-index: 1;
-=======
-}
-
-.special-link-card {
-  font-family: 'MullerRegular';
-  font-size: 16px;
-  color: #FFCC66;
-  padding-left: 40px;
-  background-image: url(../img/Rectangle\ 2.svg);
-  background-repeat: no-repeat;
-  background-position: right;
-  padding-right: 14.28px;
->>>>>>> 9c886458cb68fc45ea89a797db60c1ce8cafa263
 }
 
 .special-card3 {
@@ -323,11 +290,8 @@ body {
   margin: 0;
   padding-top: 211px;
   padding-left: 40px;
-<<<<<<< HEAD
   position: relative;
   z-index: 1;
-=======
->>>>>>> 9c886458cb68fc45ea89a797db60c1ce8cafa263
 }
 
 .special-price-card3 {
@@ -338,31 +302,21 @@ body {
   padding-top: 15px;
   padding-bottom: 41px;
   opacity: 0.8;
-<<<<<<< HEAD
   position: relative;
   z-index: 1;
-=======
->>>>>>> 9c886458cb68fc45ea89a797db60c1ce8cafa263
 }
 
 .special-link-card3 {
   font-family: 'MullerRegular';
   font-size: 16px;
   color: #FFCC66;
-<<<<<<< HEAD
   margin-left: 40px;
-=======
-  padding-left: 40px;
->>>>>>> 9c886458cb68fc45ea89a797db60c1ce8cafa263
   background-image: url(../img/Rectangle\ 2.svg);
   background-repeat: no-repeat;
   background-position: right;
   padding-right: 14.28px;
-<<<<<<< HEAD
   position: relative;
   z-index: 1;
-=======
->>>>>>> 9c886458cb68fc45ea89a797db60c1ce8cafa263
 }
 
 .main-text {
@@ -473,14 +427,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-<<<<<<< HEAD
 }
 
 .advantages-list li:not(:nth-child(4n)) {
   margin-right: 23px; 
-=======
-  justify-content: space-between;
->>>>>>> 9c886458cb68fc45ea89a797db60c1ce8cafa263
 }
 
 .advantages-list-items {
@@ -600,10 +550,7 @@ body {
 .placing-list-items-last {
   display: flex;
   align-items: flex-end;
-<<<<<<< HEAD
   position: relative;
-=======
->>>>>>> 9c886458cb68fc45ea89a797db60c1ce8cafa263
 }
 
 .placing-items-last-text {
@@ -616,7 +563,6 @@ body {
   background-position: center right;
   padding-right: 20px;
   line-height: 1;
-<<<<<<< HEAD
   position: relative;
   z-index: 1;
 }
@@ -628,8 +574,6 @@ body {
   width: 100%;
   height: 100%;
   left: 0;
-=======
->>>>>>> 9c886458cb68fc45ea89a797db60c1ce8cafa263
 }
 
  .placing-list {
@@ -818,10 +762,7 @@ h3 {
   font-size: 16px;
   line-height: 150%;
   color: #CC9933;
-<<<<<<< HEAD
   width: auto;
-=======
->>>>>>> 9c886458cb68fc45ea89a797db60c1ce8cafa263
 }
 
 .email {
@@ -907,20 +848,14 @@ h3 {
   display: flex;
   flex-direction: column;
   margin-top: 14px;
-<<<<<<< HEAD
   width: 155px;
-=======
->>>>>>> 9c886458cb68fc45ea89a797db60c1ce8cafa263
 }
 
 .footer-emails {
   display: flex;
   flex-direction: column;
   margin-top: 15px;
-<<<<<<< HEAD
   width: 132px;
-=======
->>>>>>> 9c886458cb68fc45ea89a797db60c1ce8cafa263
 }
 
 .emails {
@@ -958,7 +893,6 @@ h3 {
 
 .btn:hover {
   transform: scale(1.1);
-<<<<<<< HEAD
   transition: color 300ms linear;
   background-color: #CC9933;
   color: #fff;
@@ -970,8 +904,3 @@ a:hover {
   color: #CC9933;
 }
 
-=======
-  background-color: #CC9933;
-  color: #fff;
-}
->>>>>>> 9c886458cb68fc45ea89a797db60c1ce8cafa263

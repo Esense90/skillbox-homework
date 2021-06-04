@@ -30,6 +30,12 @@
   font-style: normal;
 }
 
+:root {
+  --color-orange: #CC9933;
+  --color-light-orange: #FFCC66;
+  --color-grey: #666;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -672,7 +678,14 @@ h3 {
   margin-right: 80px;
 }
 
-.phone {
+.contacts-phone {
+  font-family: 'Mullerregular';
+  font-size: 16px;
+  color: #CC9933;
+  line-height: 24px;
+}
+
+.footer-phone {
   font-family: 'MullerRegular';
   font-size: 16px;
   line-height: 150%;
@@ -799,10 +812,46 @@ h3 {
   display: flex;
   flex-direction: column;
   margin-left: 260px;
+  padding-top: 7px;
+}
+
+.component {
+  background-image: url(../img/component.png);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.twitter {
+  background-image: url(../img/twitter.png);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.facebook {
+  background-image: url(../img/facebook.png);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.vkontakte {
+  background-image: url(../img/social.png);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.instagram {
+  background-image: url(../img/instagram.png);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
 }
 
 .footer-social a:not(:first-child) {
-  padding-top: 18px;
+  margin-top: 20px;
 }
 
 .btn:hover {
@@ -811,3 +860,17 @@ h3 {
   color: #fff;
 }
 
+.animation:hover {
+  transition: color .3s ease;
+  color: #666;
+}
+
+.animation1:hover {
+  transition: color .3s ease;
+  color: #CC9933;
+}
+
+.animation2:hover {
+  transition: color .3s ease;
+  color: #fff;
+}

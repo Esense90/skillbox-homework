@@ -172,6 +172,27 @@ body {
 .special-card1 {
   min-height: 258px;
   background-image: url(../img/Rectangle\ 14.png);
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.special-card1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
+  transform: translateX(-100%);
+  transition: transform .3s ease;
+}
+
+.special-card1:hover::before {
+  transform: none;
 }
 
 .special-card2 {
@@ -179,6 +200,26 @@ body {
   margin-top: 23px;
   background-image: url(../img/Rectangle\ 16.png);
   position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.special-card2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
+  transform: translateX(-100%);
+  transition: transform .3s ease;
+}
+
+.special-card2:hover::before {
+  transform: none;
 }
 
 .special-title-card {
@@ -190,6 +231,8 @@ body {
   padding-top: 40px;
   width: 339px;
   margin: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .special-price-card {
@@ -200,6 +243,8 @@ body {
   padding-left: 40px;
   padding-top: 15px;
   padding-bottom: 47px;
+  position: relative;
+  z-index: 1;
 }
 
 .special-link-card {
@@ -211,12 +256,35 @@ body {
   background-repeat: no-repeat;
   background-position:right;
   padding-right: 14.28px;
+  position: relative;
+  z-index: 1;
 }
 
 .special-card3 {
   margin-left: 23px;
   background-image: url(../img/33_1.png);
   width: 573px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.special-card3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: linear-gradient(0deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
+  transform: translateY(100%);
+  transition: transform .3s ease;
+}
+
+.special-card3:hover::before {
+  transform: none;
 }
 
 .special-title-card3 {
@@ -229,6 +297,8 @@ body {
   margin: 0;
   padding-top: 211px;
   padding-left: 40px;
+  position: relative;
+  z-index: 1;
 }
 
 .special-price-card3 {
@@ -239,6 +309,8 @@ body {
   padding-top: 15px;
   padding-bottom: 41px;
   opacity: 0.8;
+  position: relative;
+  z-index: 1;
 }
 
 .special-link-card3 {
@@ -250,6 +322,8 @@ body {
   background-repeat: no-repeat;
   background-position: right;
   padding-right: 14.28px;
+  position: relative;
+  z-index: 1;
 }
 
 .main-text {
@@ -450,11 +524,24 @@ body {
  }
 
  .placing-list-items-last {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
   width: 374px;
   min-height: 440px;
   margin-bottom: 23px;
   border-radius: 15px;
   background-image: url(../img/41.png);
+  background-repeat: no-repeat;
+}
+
+.link-all::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
 }
 
 .items-name-hotel {
@@ -479,11 +566,6 @@ body {
   font-size: 16px;
   font-family: 'MullerRegular';
   color: #CC9933;
-}
-
-.placing-list-items-last {
-  display: flex;
-  align-items: flex-end;
 }
 
 .placing-items-last-text {

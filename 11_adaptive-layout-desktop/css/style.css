@@ -1,7 +1,31 @@
 @font-face {
-    font-family: 'Montserrat';
-    src: url(../fonts/Montserrat.woff),
-      url(../fonts/Montserrat.woff2);
+    font-family: 'MontserratRegular';
+    src: url(../fonts/montserrat-regular-webfont.woff),
+      url(../fonts/montserrat-regular-webfont.woff2);
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'MontserratLight';
+    src: url(../fonts/montserrat-light-webfont.woff),
+      url(../fonts/montserrat-light-webfont.woff2);
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'MontserratMedium';
+    src: url(../fonts/montserrat-medium-webfont.woff),
+      url(../fonts/montserrat-medium-webfont.woff2);
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'MontserratBold';
+    src: url(../fonts/montserrat-bold-webfont.woff),
+      url(../fonts/montserrat-bold-webfont.woff2);
     font-display: swap;
     font-style: normal;
   }
@@ -51,21 +75,47 @@
 
   .header__list {
       display: flex;
-      align-items: center;
-      padding-bottom: 4px;
-  }   
+      align-items: flex-end;
+      padding-bottom: 5px;
+  }
 
   .header__link {
       margin-right: 85px;
-      font-family: 'Montserrat';
+      font-family: 'MontserratMedium';
+      letter-spacing: 0.3px;
       font-size: 18px;
-      letter-spacing: 0.5px;
       color: #333;
       font-weight: 600;
   }
 
     /* header */
-  
-    
 
-  
+    /* main */
+
+  .main {
+    max-width: 1770px;
+    margin: 0 auto;
+  }
+
+  .hero__img {
+    position: relative;
+    width: 100%;
+  }
+
+  .hero__text {
+    position: absolute;
+    width: 837px;
+    left: 147px;
+    top: 207px;
+    right: 0;
+    bottom: 0;
+  }
+
+  .hero__title {
+    font-family: 'MontserratBold';
+    font-size: 70px;
+    line-height: 85px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #fff;
+  }

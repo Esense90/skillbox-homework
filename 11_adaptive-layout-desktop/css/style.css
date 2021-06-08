@@ -30,6 +30,14 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url(../fonts/Montserrat-ExtraBold.woff),
+      url(../fonts/Montserrat-ExtraBold.woff2);
+    font-display: swap;
+    font-style: normal;
+  }
+
   :root {
       --color-orange: #FF9900;
       --color-grey: #E5E5E5;
@@ -50,6 +58,10 @@
 
   a {
       text-decoration: none;
+  }
+
+  .btn {
+    border: none;
   }
 
     /* header */
@@ -105,17 +117,34 @@
   .hero__text {
     position: absolute;
     width: 837px;
+    min-height: 420px;
     left: 147px;
-    top: 207px;
+    top: 203px;
     right: 0;
     bottom: 0;
   }
 
   .hero__title {
-    font-family: 'MontserratBold';
+    padding-bottom: 24px;
+    font-family: 'Montserrat-ExtraBold';
     font-size: 70px;
     line-height: 85px;
-    font-weight: 900;
-    letter-spacing: 1px;
+    color: #fff;
+  }
+
+  .hero__subtitle {
+    padding-bottom: 88px;
+    font-family: 'MontserratBold';
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+  }
+
+  .hero__btn {
+    padding: 25px 37px;
+    background-color: #FF9900;
+    font-family: 'MontserratBold';
+    font-size: 23.46px;
+    line-height: 29px;
     color: #fff;
   }

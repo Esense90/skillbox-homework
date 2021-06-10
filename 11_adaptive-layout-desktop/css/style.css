@@ -355,3 +355,46 @@
     color: #333;
     border: 1px solid #333;
   }
+
+  /* how */
+
+  /* faq */
+
+  .faq {
+    margin-top: 105px;
+  }
+  
+  .faq__title {
+    margin-bottom: 42px;
+    font-family: 'MontserratLight';
+    font-size: 48px;
+    color: #333;
+    letter-spacing: 0.4px;
+  }
+  
+  .faq__list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 28px;
+    border-top:1px solid #CACACA;
+  }
+
+  .faq__item-question {
+    font-family: 'MontserratBold';
+    font-size: 24px;
+    color: #333;
+  }
+
+  .faq__item-last {
+    border-bottom: 1px solid #CACACA;
+  }
+
+  .faq__slash {
+    color: grey;
+  }
+
+  
+  
+  

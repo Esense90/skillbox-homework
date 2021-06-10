@@ -226,4 +226,132 @@
     border: 3px solid #FF9900;
   }
 
+  .about__cards-right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-basis: 50%;
+  }
 
+  .about__card-verticale {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border: 1px solid #CACACA;
+    min-height: 295px;
+    padding-left: 59px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .card__top-img {
+    flex-shrink: 0;
+    width: 190px;
+    height: 165px;
+    margin-top: 9px;
+    background-image: url(../img/Frame\ 16.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .about__card-verticale-info {
+    max-width: 511px;
+    margin-left: 50px;
+    margin-top: 12px;
+  }
+
+  .about__card-title {
+    font-family: 'MontserratBold';
+    font-size: 24px;
+  }
+
+  .about__card-subtitle {
+    font-family: 'MontserratRegular';
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 8px;
+    max-width: 450px;
+  }
+
+  .card__bottom-img {
+    background-image: url(../img/Frame\ 12.png);
+    flex-shrink: 0;
+    width: 190px;
+    height: 165px;
+    margin-top: 9px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* about */
+
+  /* how */
+
+  .how__title {
+    margin-top: 106px;
+    font-family: 'MontserratLight';
+    font-size: 48px;
+    letter-spacing: 0.4px;
+    color: #333;
+  }
+
+  .how__step:not(last-child) {
+    margin-right: 86px;
+  }
+
+  .how__steps {
+    margin-bottom: 47px;
+    display: flex;
+    margin-top: 50px;
+    font-family: 'MontserratRegular';
+    font-size: 18px;
+    color: #333;
+  }
+
+  .how__info {
+    display: flex;
+  }
+
+  .how__img {
+    margin-left: 142px;
+    margin-top: 8px;
+    width: 870px;
+    height: 460px;
+  }
+
+  .how__subtitle {
+    margin-bottom: 7px;
+    font-family: 'MontserratBold';
+    font-size: 24px;
+    line-height: 32px;
+    color: #333;
+  }
+
+  .how__text {
+    font-family: 'MontserratRegular';
+    font-size: 16px;
+    line-height: 32px;
+    max-width: 758px;
+  }
+
+  .how__discription-btn {
+    margin-top: 49px;
+  }
+
+  .how__btn-left {
+    margin-right: 28px;
+    padding: 21px 37px 19px 38px;
+    border: 1px solid #FF9900;
+    background-color: #FF9900;
+    font-family: 'MontserratBold';
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .how__btn-right {
+    padding: 21px 37px 19px 37px;
+    font-family: 'MontserratRegular';
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #333;
+  }

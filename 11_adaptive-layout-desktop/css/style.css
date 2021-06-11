@@ -584,6 +584,14 @@
     border-top: 1px solid #FF9900;
   }
 
+  .faq__list-item:hover + .faq__list-item{
+    border-top: 1px solid #FF9900;
+  }
+
+  
+
+  
+
   
 
 

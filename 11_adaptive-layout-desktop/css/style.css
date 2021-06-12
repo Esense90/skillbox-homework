@@ -93,11 +93,13 @@
     border: none;
     background: none;
     cursor: pointer;
+    outline: none;
   }
 
   input, select {
     border: none;
     appearance: none;
+    outline: none;
   }
 
     /* header */
@@ -137,6 +139,7 @@
     font-size: 18px;
     letter-spacing: 0.1px;
     color: #333;
+    transition: all 100ms linear;
   }
 
   .header__search {
@@ -455,6 +458,10 @@
     margin: 0 auto;
   }
 
+  .footer__left {
+    margin-top: 3px;
+  }
+
   .footer__list {
     padding-top: 17px;
   }
@@ -468,11 +475,10 @@
 
   .footer__social {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-top: 89px;
-  }
-
-  .footer__social-img:not(last-child) {
-    margin-right: 25px;
+    max-width: 230px;
   }
 
   .footer__form {
@@ -482,7 +488,7 @@
 
   .footer__center {
     min-width: 570px;
-    margin-left: 110px;
+    margin-left: 116px;
     margin-top: 4px;
   }
 
@@ -500,6 +506,7 @@
     font-family: 'MontserratRegular';
     font-size: 16px;
     background: #414141;
+    color: #CACACA;
   }
 
   .footer__form-email {
@@ -508,6 +515,7 @@
     font-family: 'MontserratRegular';
     font-size: 16px;
     background: #414141;
+    color: #CACACA;
   }
 
   .footer__form-text {
@@ -516,6 +524,7 @@
     font-family: 'MontserratRegular';
     font-size: 16px;
     background: #414141;
+    color: #CACACA;
   }
 
   ::placeholder {
@@ -552,6 +561,10 @@
     color: #CACACA;
   }
 
+  .footer__igree {
+    margin-right: 1px;
+  }
+
   .footer__right {
     margin-top: 1px;
     max-width: 363px;
@@ -570,81 +583,175 @@
   }
 
    .header__search:hover .header__search-rect {
+    transition: fill .3s ease;
     fill: #FF9900;
   }
 
   .header__search:hover .header__search-path {
+    transition: stroke .4s ease;
     stroke: #FF9900;
   }
 
   .hero__btn:hover {
+    transition: background .4s ease;
     background-color: rgba(255, 153, 0, 0.7);
   }
 
   .about__card-btn:hover {
+    transition: background .4s ease;
     background-color: #FF9900;
   }
 
   .how__step-link:hover {
+    transition: color .4s ease;
     color: #FF9900;
   }
 
   .how__btn-left:hover {
+    transition: background .4s ease;
     background-color: #F7B045;;
   }
 
   .how__btn-right:hover {
+    transition: background .4s ease;
     background-color: #666;
     color: #fff;
   }
 
   .faq__list-item:hover {
+    transition: border .4s ease;
     border-top: 1px solid #FF9900;
   }
 
   .faq__list-item:hover + .faq__list-item{
+    transition: border .4s ease;
     border-top: 1px solid #FF9900;
   }
 
   .faq__item-last:hover {
+    transition: border .4s ease;
     border-bottom: 1px solid #FF9900;
   }
 
   .faq__list-item:hover .faq__item-question {
+    transition: color .4s ease;
     color: #FF9900;
   }
 
   .faq__list-item:hover .faq__img-path  {
+    transition: fill .4s ease;
     fill: #FFF;
   }
 
   .faq__list-item:hover .faq__item-ellipse {
+    transition: fill .4s ease;
     fill: #FF9900;
   }
 
   .footer__item:hover {
+    transition: color .4s ease;
     color: #FF9900;
   }
 
   .footer__social-img:hover .footer__social-svg {
+    transition: fill .4s ease;
     fill: #FF9900;
   }
 
   .footer__form-name:hover {
-     background-color: #666;
+    transition: background .4s ease;
+    background-color: #666;
   }
 
   .footer__form-email:hover {
+    transition: background .4s ease;
     background-color: #666;
  }
 
  .footer__form-text:hover {
-  background-color: #666;
+    transition: background .4s ease;
+    background-color: #666;
 }
 
 .footer__form-btn:hover {
+    transition: background .4s ease;
+    background-color: rgba(255, 153, 0, 0.7);
+}
+
+/* hover */
+
+/* focus */
+
+a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__social-svg:focus {
+  outline: 2px solid #FF9900;
+  outline-offset: 2px;
+}
+
+.hero__btn:focus, .how__btn-left:focus {
+  background-color: #F7B045;
+}
+
+.about__card-btn:focus {
+  background-color: #FF9900;
+}
+
+.how__btn-right:focus {
+  background-color: #666;
+  color: #fff;
+}
+
+.footer__form-btn:focus {
   background-color: rgba(255, 153, 0, 0.7);
 }
+
+ input:focus {
+  background-color: #666;
+}
+
+.faq__list-item:focus {
+  color: #FF9900;
+}
+
+/* focus */
+
+/* active */
+
+.header__link:active {
+  border-bottom: 2px solid #E1670E;
+  color: #E1670E;
+}
+
+.hero__btn:active {
+  background-color: #E1670E;
+}
+
+.about__card-btn:active {
+  background-color: #E1670E;
+  border: 3px solid #E1670E;
+}
+
+.how__btn-left:active, .footer__form-btn:active {
+  background-color: #E1670E;
+}
+
+.how__btn-right:active {
+  background-color: #000;
+}
+
+.footer__item:active, .how__step-link:active {
+  color: #E1670E;
+}
+
+.footer__social-img:active .footer__social-svg {
+  fill: #E1670E;
+}
+
+/* active */
+
+/* animation */
+
+
+
 
 
 

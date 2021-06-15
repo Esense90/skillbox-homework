@@ -746,6 +746,17 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
 
 /* media queris */
 
+@media (min-width:1025px) {
+  .header__menu {
+    display: none;
+  }
+
+  .hero__img-small {
+    display: none;
+  }
+
+}
+
 @media (max-width: 1024px) {
   .about__cards {
     flex-direction: column;
@@ -762,11 +773,12 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
   .header {
     margin: 0;
     padding: 0;
+    min-width: 924px;
   }
 
   .header__container {
     align-items: flex-start;
-    width: 924px;
+    min-width: 924px;
     padding: 37px 0px 30px 0px;
     background-image: url(../img/Logo_1024.png);
     background-repeat: no-repeat;
@@ -814,7 +826,7 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
   .about__title {
     margin: 80px 0px 6px 0px;
   }
-  
+
   .about__subtitle {
     margin-right: 1px;
   }
@@ -896,5 +908,66 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
   .faq {
     margin-top: 86px;
   }
-  
+
+  .faq__title {
+    margin-bottom: 30px;
+  }
+
+  .faq__item-question {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .faq__item-question {
+    max-width: 756px;
+  }
+
+  .faq__list-item {
+    padding-top: 31px;
+    padding-bottom: 29px;
+  }
+
+  .footer {
+    margin-top: 80px;
+  }
+
+  .footer__container {
+    justify-content: space-around;
+  }
+
+  .footer__left {
+    margin-left: 29px;
+  }
+
+  .footer__center {
+    margin-left: 95px;
+  }
+
+  .footer__form-name, .footer__form-email, .footer__form-text {
+    max-width: 541px;
+  }
+
+  .footer__form-btn {
+    margin-right: 0px;
+    padding: 21px 37px 19px 37px;
+  }
+
+  .footer__form-bottom {
+    justify-content: flex-start;
+  }
+
+  .footer__label {
+    padding-left: 22px;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+

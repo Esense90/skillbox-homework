@@ -1,63 +1,32 @@
 @font-face {
-  font-family: 'MontserratBlack';
-  src: url(../fonts/montserrat-black-webfont.woff);
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'MontserratBold';
-  src: url(../fonts/montserrat-bold-webfont.woff);
+  font-family: 'Montserrat';
+  src: url(../fonts/montserrat-bold.woff);
+  src: url(../fonts/montserrat-bold.woff2);
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'MontserratExtraBold';
-  src: url(../fonts/montserrat-extrabold-webfont.woff);
+  font-family: 'Montserrat';
+  src: url(../fonts/montserrat-extrabold.woff);
+  src: url(../fonts/montserrat-extrabold.woff2);
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'MontserratExtraLight';
-  src: url(../fonts/montserrat-extralight-webfont.woff);
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'MontserratLight';
-  src: url(../fonts/montserrat-light-webfont.woff);
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'MontserratMedium';
-  src: url(../fonts/montserrat-medium-webfont.woff);
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'MontserratRegular';
-  src: url(../fonts/montserrat-regular-webfont.woff);
+  font-family: 'Montserrat';
+  src: url(../fonts/montserrat-regular.woff);
+  src: url(../fonts/montserrat-regular.woff2);
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'MontserratSemiBold';
-  src: url(../fonts/montserrat-semibold-webfont.woff);
+  font-family: 'Montserrat';
+  src: url(../fonts/montserrat-semibold.woff);
+  src: url(../fonts/montserrat-semibold.woff2);
   font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'MontserratThin';
-  src: url(../fonts/montserrat-thin-webfont.woff);
-  font-weight: 100;
   font-style: normal;
 }
 
@@ -82,7 +51,7 @@
   }
 
   a {
-      text-decoration: none;
+    text-decoration: none;
   }
 
   .btn {
@@ -98,6 +67,22 @@
     outline: none;
   }
 
+  .container {
+    max-width: 1770px;
+    margin: auto;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
     /* header */
 
-  
+
+
+
+
+
+
+
+

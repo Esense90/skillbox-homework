@@ -1,0 +1,973 @@
+@font-face {
+  font-family: 'MontserratBlack';
+  src: url(../fonts/montserrat-black-webfont.woff);
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratBold';
+  src: url(../fonts/montserrat-bold-webfont.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratExtraBold';
+  src: url(../fonts/montserrat-extrabold-webfont.woff);
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratExtraLight';
+  src: url(../fonts/montserrat-extralight-webfont.woff);
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratLight';
+  src: url(../fonts/montserrat-light-webfont.woff);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratMedium';
+  src: url(../fonts/montserrat-medium-webfont.woff);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratRegular';
+  src: url(../fonts/montserrat-regular-webfont.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratSemiBold';
+  src: url(../fonts/montserrat-semibold-webfont.woff);
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratThin';
+  src: url(../fonts/montserrat-thin-webfont.woff);
+  font-weight: 100;
+  font-style: normal;
+}
+
+  :root {
+      --color-orange: #FF9900;
+      --color-grey: #E5E5E5;
+      --color-dark-grey: #414141;
+      --main-color-black: #333333;
+  }
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+  }
+
+  ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  .btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+  }
+
+  input, select {
+    border: none;
+    appearance: none;
+    outline: none;
+  }
+
+    /* header */
+
+  .header {
+    border: 1px solid #fff;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    min-height: 100px;
+    padding-top: 14px;
+    padding-bottom: 3px;
+  }
+
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container {
+    max-width: 1771px;
+    margin: 0 auto;
+  }
+
+  .header__right {
+    display: flex;
+  }
+
+  .header__list {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 5px;
+  }
+
+  .header__link {
+    margin-right: 85px;
+    font-family: 'MontserratSemiBold';
+    font-size: 18px;
+    letter-spacing: 0.1px;
+    color: #333;
+    transition: all 100ms linear;
+  }
+
+  .header__search {
+    cursor: pointer;
+  }
+
+    /* header */
+
+    /* hero */
+
+  .main {
+    max-width: 1770px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    position: relative;
+  }
+
+  .hero__img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 1px;
+  }
+
+  .hero__text {
+    position: absolute;
+    padding-top: 106px;
+    padding-left: 81px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 900px;
+  }
+
+  .hero__title {
+    padding-bottom: 21px;
+    font-family: 'MontserratExtraBold';
+    font-size: 70px;
+    line-height: 85px;
+    color: #fff;
+  }
+
+  .hero__subtitle {
+    padding-bottom: 89px;
+    font-family: 'MontserratBold';
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+  }
+
+  .hero__btn {
+    padding: 24px 37px;
+    background-color: #FF9900;
+    font-family: 'MontserratBold';
+    font-size: 23.46px;
+    line-height: 30px;
+    color: #fff;
+  }
+
+  /* hero */
+
+  /* about */
+
+  .about__title {
+    margin-left: 3px;
+    margin-top: 100px;
+    margin-bottom: 17px;
+    font-family: 'MontserratLight';
+    font-size: 48px;
+    line-height: 59px;
+    color: #333;
+  }
+
+  .about__subtitle {
+    font-family: 'MontserratRegular';
+    font-size: 16px;
+    line-height: 32px;
+    max-width: 1235px;
+    color: #333;
+  }
+
+  .about__cards {
+    display: flex;
+    margin-top: 49px;
+  }
+
+  .about__card-left {
+    display: flex;
+    position: relative;
+    height: 100%;
+    margin-right: 32px;
+  }
+
+  .about__card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    right: 0;
+    padding: 50px 50px;
+    background-color: rgba(0, 0, 0, 0.5);;
+  }
+
+  .about__card-discription {
+    font-family: 'MontserratBold';
+    max-width: 454px;
+    font-size: 16px;
+    line-height: 32px;
+    color: #fff;
+  }
+
+  .about__card-btn {
+    display: flex;
+    padding: 18px 35px;
+    font-family: 'MontserratBold';
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    border: 3px solid #FF9900;
+  }
+
+  .about__cards-right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-basis: 50%;
+  }
+
+  .about__card-verticale {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border: 1px solid #CACACA;
+    min-height: 295px;
+    padding-left: 59px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .card__top-img {
+    flex-shrink: 0;
+    width: 190px;
+    height: 165px;
+    margin-top: 9px;
+    background-image: url(../img/Frame\ 16.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .about__card-verticale-info {
+    max-width: 511px;
+    margin-left: 50px;
+    margin-top: 12px;
+  }
+
+  .about__card-title {
+    font-family: 'MontserratBold';
+    font-size: 24px;
+  }
+
+  .about__card-subtitle {
+    font-family: 'MontserratRegular';
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 8px;
+    max-width: 450px;
+  }
+
+  .card__bottom-img {
+    background-image: url(../img/Frame\ 12.png);
+    flex-shrink: 0;
+    width: 190px;
+    height: 165px;
+    margin-top: 9px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* about */
+
+  /* how */
+
+  .how__title {
+    margin-top: 106px;
+    font-family: 'MontserratLight';
+    font-size: 48px;
+    letter-spacing: 0.4px;
+    color: #333;
+  }
+
+  .how__step:not(last-child) {
+    margin-right: 86px;
+  }
+
+  .how__steps {
+    margin-bottom: 47px;
+    display: flex;
+    margin-top: 50px;
+    font-family: 'MontserratRegular';
+    font-size: 18px;
+  }
+
+  .how__step-link {
+    color: #333;
+  }
+
+  .how__step-active {
+    color: #E1670E ;
+  }
+
+  .how__info {
+    display: flex;
+  }
+
+  .how__img {
+    margin-left: 142px;
+    margin-top: 8px;
+    width: 870px;
+    height: 100px;
+  }
+
+  .how__subtitle {
+    margin-bottom: 7px;
+    font-family: 'MontserratBold';
+    font-size: 24px;
+    line-height: 32px;
+    color: #333;
+  }
+
+  .how__text {
+    font-family: 'MontserratRegular';
+    font-size: 16px;
+    line-height: 32px;
+    max-width: 758px;
+  }
+
+  .how__discription-btn {
+    margin-top: 49px;
+  }
+
+  .how__btn-left {
+    margin-right: 28px;
+    padding: 21px 37px 19px 38px;
+    border: 1px solid #FF9900;
+    background-color: #FF9900;
+    font-family: 'MontserratBold';
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .how__btn-right {
+    padding: 21px 37px 19px 37px;
+    font-family: 'MontserratRegular';
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #333;
+  }
+
+  /* how */
+
+  /* faq */
+
+  .faq {
+    margin-top: 105px;
+  }
+
+  .faq__title {
+    margin-bottom: 42px;
+    font-family: 'MontserratLight';
+    font-size: 48px;
+    color: #333;
+    letter-spacing: 0.4px;
+  }
+
+  .faq__list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 28px;
+    border-top:1px solid #CACACA;
+    cursor: pointer;
+  }
+
+  .faq__item-question {
+    font-family: 'MontserratBold';
+    font-size: 24px;
+    color: #333;
+  }
+
+  .faq__item-last {
+    border-bottom: 1px solid #CACACA;
+  }
+
+  /* faq */
+
+  /* footer */
+
+  .footer {
+    display: flex;
+    margin-top: 100px;
+    min-height: 594px;
+    background-color: #222;
+  }
+
+  .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1770px;
+    margin: 0 auto;
+  }
+
+  .footer__left {
+    margin-top: 3px;
+  }
+
+  .footer__list {
+    padding-top: 17px;
+  }
+
+  .footer__item {
+    font-family: 'MontserratSemiBold';
+    font-size: 18px;
+    line-height: 36px;
+    color: #CACACA;
+  }
+
+  .footer__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 89px;
+    max-width: 230px;
+  }
+
+  .footer__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__center {
+    min-width: 570px;
+    margin-left: 116px;
+    margin-top: 4px;
+  }
+
+  .footer__form-title {
+    margin-bottom: 24px;
+    font-family: 'MontserratLight';
+    letter-spacing: 0.4px;
+    font-size: 48px;
+    color: #CACACA;
+  }
+
+  .footer__form-name {
+    margin-bottom: 25px;
+    padding: 22px 0 20px 24px;
+    font-family: 'MontserratRegular';
+    font-size: 16px;
+    background: #414141;
+    color: #CACACA;
+  }
+
+  .footer__form-email {
+    margin-bottom: 25px;
+    padding: 22px 0 20px 24px;
+    font-family: 'MontserratRegular';
+    font-size: 16px;
+    background: #414141;
+    color: #CACACA;
+  }
+
+  .footer__form-text {
+    margin-bottom: 32px;
+    padding: 22px 0 110px 24px;
+    font-family: 'MontserratRegular';
+    font-size: 16px;
+    background: #414141;
+    color: #CACACA;
+  }
+
+  ::placeholder {
+    color: #CACACA;
+  }
+
+  .footer__form-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__form-btn {
+    margin-right: 22px;
+    padding: 21px 52px 19px 53px;
+    font-family: 'MontserratBold';
+    font-size: 16px;
+    color: #fff;
+    background-color: #FF9900;
+  }
+
+  .footer__form-checkbox {
+    margin-right: 1px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #CACACA;
+  }
+
+  .footer__label {
+    margin-top: 7px;
+    font-family: 'MontserratRegular';
+    font-size: 16px;
+    color: #CACACA;
+  }
+
+  .footer__igree {
+    margin-right: 1px;
+  }
+
+  .footer__right {
+    margin-top: 1px;
+    max-width: 363px;
+    font-family: 'MontserratRegular';
+    font-size: 16px;
+    line-height: 32px;
+    color: #CACACA;
+  }
+
+  /* footer */
+
+  /* hover */
+
+  .header__link:hover {
+    border-bottom: 2px solid #FF9900;
+  }
+
+   .header__search:hover .header__search-rect {
+    transition: fill .3s ease;
+    fill: #FF9900;
+  }
+
+  .header__search:hover .header__search-path {
+    transition: stroke .4s ease;
+    stroke: #FF9900;
+  }
+
+  .hero__btn:hover {
+    transition: background .4s ease;
+    background-color: rgba(255, 153, 0, 0.7);
+  }
+
+  .about__card-btn:hover {
+    transition: background .4s ease;
+    background-color: #FF9900;
+  }
+
+  .how__step-link:hover {
+    transition: color .4s ease;
+    color: #FF9900;
+  }
+
+  .how__btn-left:hover {
+    transition: background .4s ease;
+    background-color: #F7B045;;
+  }
+
+  .how__btn-right:hover {
+    transition: background .4s ease;
+    background-color: #666;
+    color: #fff;
+  }
+
+  .faq__list-item:hover {
+    transition: border .4s ease;
+    border-top: 1px solid #FF9900;
+  }
+
+  .faq__list-item:hover + .faq__list-item{
+    transition: border .4s ease;
+    border-top: 1px solid #FF9900;
+  }
+
+  .faq__item-last:hover {
+    transition: border .4s ease;
+    border-bottom: 1px solid #FF9900;
+  }
+
+  .faq__list-item:hover .faq__item-question {
+    transition: color .4s ease;
+    color: #FF9900;
+  }
+
+  .faq__list-item:hover .faq__img-path  {
+    transition: fill .4s ease;
+    fill: #FFF;
+  }
+
+  .faq__list-item:hover .faq__item-ellipse {
+    transition: fill .4s ease;
+    fill: #FF9900;
+  }
+
+  .footer__item:hover {
+    transition: color .4s ease;
+    color: #FF9900;
+  }
+
+  .footer__social-img:hover .footer__social-svg {
+    transition: fill .4s ease;
+    fill: #FF9900;
+  }
+
+  .footer__form-name:hover {
+    transition: background .4s ease;
+    background-color: #666;
+  }
+
+  .footer__form-email:hover {
+    transition: background .4s ease;
+    background-color: #666;
+ }
+
+ .footer__form-text:hover {
+    transition: background .4s ease;
+    background-color: #666;
+}
+
+.footer__form-btn:hover {
+    transition: background .4s ease;
+    background-color: rgba(255, 153, 0, 0.7);
+}
+
+/* hover */
+
+/* focus */
+
+a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__social-svg:focus {
+  outline: 2px solid #FF9900;
+  outline-offset: 2px;
+}
+
+.hero__btn:focus, .how__btn-left:focus {
+  background-color: #F7B045;
+}
+
+.about__card-btn:focus {
+  background-color: #FF9900;
+}
+
+.how__btn-right:focus {
+  background-color: #666;
+  color: #fff;
+}
+
+.footer__form-btn:focus {
+  background-color: rgba(255, 153, 0, 0.7);
+}
+
+ input:focus {
+  background-color: #666;
+}
+
+.faq__list-item:focus {
+  color: #FF9900;
+}
+
+/* focus */
+
+/* active */
+
+.header__link:active {
+  border-bottom: 2px solid #E1670E;
+  color: #E1670E;
+}
+
+.hero__btn:active {
+  background-color: #E1670E;
+}
+
+.about__card-btn:active {
+  background-color: #E1670E;
+  border: 3px solid #E1670E;
+}
+
+.how__btn-left:active, .footer__form-btn:active {
+  background-color: #E1670E;
+}
+
+.how__btn-right:active {
+  background-color: #000;
+}
+
+.footer__item:active, .how__step-link:active {
+  color: #E1670E;
+}
+
+.footer__social-img:active .footer__social-svg {
+  fill: #E1670E;
+}
+
+/* active */
+
+/* media queris */
+
+@media (min-width:1025px) {
+  .header__menu {
+    display: none;
+  }
+
+  .hero__img-small {
+    display: none;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .about__cards {
+    flex-direction: column;
+  }
+
+  .how__info {
+    flex-direction: column;
+  }
+
+  .footer__right {
+    display: none;
+  }
+
+  .header {
+    margin: 0;
+    padding: 0;
+    min-width: 924px;
+  }
+
+  .header__container {
+    align-items: flex-start;
+    min-width: 924px;
+    padding: 37px 0px 30px 0px;
+    background-image: url(../img/Logo_1024.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 25px;
+  }
+
+  .header__list {
+    display: none;
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  .container {
+    width: 924px;
+  }
+
+  .hero__img {
+    display: none;
+  }
+
+  .hero__text {
+    padding-left: 127px;
+    padding-top: 164px;
+  }
+
+  .hero__title {
+    font-size: 60px;
+    line-height: 73px;
+    padding-bottom: 13px;
+  }
+
+  .hero__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 60px;
+  }
+
+  .hero__btn {
+    padding: 25px 37.50px 21px 37.50px;
+  }
+
+  .about__title {
+    margin: 80px 0px 6px 0px;
+  }
+
+  .about__subtitle {
+    margin-right: 1px;
+  }
+
+  .about__cards {
+    margin-top: 62px;
+  }
+
+  .about__card-img {
+    display: none;
+  }
+
+  .about__card-left {
+    margin-right: 0px;
+    margin-bottom: 32px;
+    background-image: url(../img/Rectangle__2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 924px;
+    height: 640px;
+  }
+
+  .about__card-content {
+    padding: 51px 50px 49px 50px;
+  }
+
+  .card__top-img, .card__bottom-img {
+    margin-left: 17px;
+  }
+
+  .about__card-verticale:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .about__card-title {
+    font-size: 24px;
+    color: #333;
+  }
+
+  .about__card-subtitle {
+    font-size: 16px;
+    color: #333;
+  }
+
+  .how__title {
+    margin-top: 86px;
+  }
+
+  .how__steps {
+    margin-bottom: 50px;
+  }
+
+  .how__subtitle {
+    margin-bottom: 5px;
+    color: #333;
+    line-height: 36px;
+  }
+
+  .how__img {
+    display: none;
+  }
+
+  .how__info {
+    background-image: url(../img/Rectangle_18_small.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: bottom;
+    min-height: 689px;
+  }
+
+  .how__text {
+    width: 437px;
+  }
+
+  .how__discription-btn {
+    margin-top: 24px;
+  }
+
+  .faq {
+    margin-top: 86px;
+  }
+
+  .faq__title {
+    margin-bottom: 30px;
+  }
+
+  .faq__item-question {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .faq__item-question {
+    max-width: 756px;
+  }
+
+  .faq__list-item {
+    padding-top: 31px;
+    padding-bottom: 29px;
+  }
+
+  .footer {
+    margin-top: 80px;
+  }
+
+  .footer__container {
+    justify-content: space-around;
+  }
+
+  .footer__left {
+    margin-left: 29px;
+  }
+
+  .footer__center {
+    margin-left: 95px;
+  }
+
+  .footer__form-name, .footer__form-email, .footer__form-text {
+    max-width: 541px;
+  }
+
+  .footer__form-btn {
+    margin-right: 0px;
+    padding: 21px 37px 19px 37px;
+  }
+
+  .footer__form-bottom {
+    justify-content: flex-start;
+  }
+
+  .footer__label {
+    padding-left: 22px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

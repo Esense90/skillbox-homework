@@ -742,6 +742,7 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
 /* adaptive 1024px */
 
 @media (max-width: 1130px) {
+  
   .footer__right {
     display: none;
   }
@@ -899,6 +900,81 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
   .footer__form-btn {
     padding: 22px 37px 18px 38px;
   }
+
+  /* media 1024px */
+
+  /* media 768px */
+
+  @media (max-width: 840px) {
+
+    .container {
+      max-width: 698px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .header__container {
+      padding: 10px 15px 7px 15px;
+    }
+
+    .header__menu {
+      padding-bottom: 3px;
+    }
+
+    .footer__container {
+      flex-direction: column-reverse;
+    }
+   
+   .footer__list {
+     display: none;
+   }
+
+   .footer__center {
+     margin: auto;
+   }
+
+   .hero__discription {
+    background-image: url(../img/balconies_768.png);
+    background-size: cover;
+    min-height: 662px;
+  }
+
+  .hero__discription-text {
+    padding: 163px 47px 57px 40px;
+  }
+
+  .hero__title {
+    margin-bottom: 14px;
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .hero__subtitle {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .hero__btn {
+    padding: 28px 37px 24px 38px;
+  }
+
+  .about__cards {
+    margin-top: 60px;
+  }
+
+  .about__card-info {
+    padding: 35px 39px 33px 40px;
+  }
+
+  .about__card-subtitle {
+    max-width: 366px;
+  }
+
+  
+
+}
 
 
 

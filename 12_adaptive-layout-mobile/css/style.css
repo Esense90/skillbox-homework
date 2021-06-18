@@ -468,7 +468,7 @@
       margin-top: 89px;
       max-width: 230px;
     }
-      
+
 
     .footer__form {
       display: flex;
@@ -572,103 +572,103 @@
     .header__link:hover {
       border-bottom: 2px solid #FF9900;
     }
-  
+
      .header__search:hover .header__search-rect {
       transition: fill .3s ease;
       fill: #FF9900;
     }
-  
+
     .header__search:hover .header__search-path {
       transition: stroke .4s ease;
       stroke: #FF9900;
     }
-  
+
     .hero__btn:hover {
       transition: background .4s ease;
       background-color: rgba(255, 153, 0, 0.7);
     }
-  
+
     .about__card-btn:hover {
       transition: background .4s ease;
       background-color: #FF9900;
     }
-  
+
     .how__step-link:hover {
       transition: color .4s ease;
       color: #FF9900;
     }
-  
+
     .how__btn-left:hover {
       transition: background .4s ease;
       background-color: #F7B045;;
     }
-  
+
     .how__btn-right:hover {
       transition: background .4s ease;
       background-color: #666;
       color: #fff;
     }
-  
+
     .faq__list-item:hover {
       transition: border .4s ease;
       border-top: 1px solid #FF9900;
     }
-  
+
     .faq__list-item:hover + .faq__list-item{
       transition: border .4s ease;
       border-top: 1px solid #FF9900;
     }
-  
+
     .faq__item-last:hover {
       transition: border .4s ease;
       border-bottom: 1px solid #FF9900;
     }
-  
+
     .faq__list-item:hover .faq__item-question {
       transition: color .4s ease;
       color: #FF9900;
     }
-  
+
     .faq__list-item:hover .faq__img-path  {
       transition: fill .4s ease;
       fill: #FFF;
     }
-  
+
     .faq__list-item:hover .faq__item-ellipse {
       transition: fill .4s ease;
       fill: #FF9900;
     }
-  
+
     .footer__item:hover {
       transition: color .4s ease;
       color: #FF9900;
     }
-  
+
     .footer__social-img:hover .footer__social-svg {
       transition: fill .4s ease;
       fill: #FF9900;
     }
-  
+
     .footer__form-name:hover {
       transition: background .4s ease;
       background-color: #666;
     }
-  
+
     .footer__form-email:hover {
       transition: background .4s ease;
       background-color: #666;
    }
-  
+
    .footer__form-text:hover {
       transition: background .4s ease;
       background-color: #666;
   }
-  
+
   .footer__form-btn:hover {
       transition: background .4s ease;
       background-color: rgba(255, 153, 0, 0.7);
   }
-  
+
   /* hover */
 
   /* focus */
@@ -742,7 +742,11 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
 /* adaptive 1024px */
 
 @media (max-width: 1130px) {
-  
+
+   picture {
+     display: block;
+   }
+
   .footer__right {
     display: none;
   }
@@ -750,7 +754,7 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
   .about__cards {
     flex-direction: column;
   }
-  
+
   .header__list {
     display: none;
   }
@@ -859,7 +863,7 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
   }
 
   .faq__title {
-    margin-top: 86px;
+    margin-top: 76px;
   }
 
   .faq__item-question {
@@ -900,42 +904,43 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
   .footer__form-btn {
     padding: 22px 37px 18px 38px;
   }
+}
 
   /* media 1024px */
 
   /* media 768px */
 
-  @media (max-width: 840px) {
+@media (max-width: 840px) {
 
-    .container {
-      max-width: 698px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: 15px;
-      padding-right: 15px;
-    }
+  .container {
+    max-width: 698px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
-    .header__container {
-      padding: 10px 15px 7px 15px;
-    }
+  .header__container {
+    padding: 10px 15px 7px 15px;
+  }
 
-    .header__menu {
-      padding-bottom: 3px;
-    }
+  .header__menu {
+    padding-bottom: 3px;
+  }
 
-    .footer__container {
-      flex-direction: column-reverse;
-    }
-   
-   .footer__list {
-     display: none;
-   }
+  .footer__container {
+    flex-direction: column-reverse;
+  }
 
-   .footer__center {
-     margin: auto;
-   }
+  .footer__list {
+    display: none;
+  }
 
-   .hero__discription {
+  .footer__center {
+    margin: auto;
+  }
+
+  .hero__discription {
     background-image: url(../img/balconies_768.png);
     background-size: cover;
     min-height: 662px;
@@ -972,10 +977,162 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
     max-width: 366px;
   }
 
-  
+  .about__card-vertical-img_top {
+    width: 114px;
+    height: 99px;
+  }
 
+  .about__card-vertical-img_bottom {
+    width: 114px;
+    height: 99px;
+  }
+
+  .about__card-vertical {
+    padding: 24px 39px 24px 39px;
+    min-height: 235px
+  }
+
+  .about__card-vertical-info {
+    padding-left: 16px;
+  }
+
+  .how__steps {
+    justify-content: space-between;
+  }
+
+  .how__info {
+    flex-direction: column-reverse;
+  }
+
+  .how__img {
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .how__steps {
+    margin-bottom: 49px;
+  }
+
+  .how__images {
+    margin-bottom: 40px;
+  }
+
+  .how__text {
+    min-width: 667px;
+  }
+
+  .faq__title {
+    margin-bottom: 8px;
+    margin-top: 74px;
+    line-height: 59px;
+  }
+
+  .faq__list {
+    margin-top: 9px;
+  }
+
+  .faq__item-question {
+    max-width: 570px;
+  }
+
+  .footer__center {
+    margin: 0;
+    margin-right: 127px;
+  }
+
+  .footer__container {
+    padding-top: 56px;
+  }
+
+  .footer__form-bottom {
+    margin-bottom: 50px;
+  }
+
+  .footer__social {
+    margin: 0;
+  }
+
+  .footer__logo {
+    margin-bottom: 11px;
+  }
+
+  .footer {
+    min-height: 792px;
+  }
 }
 
+  /* media 768px */
+
+  /* media 550px */
+
+/* @media (max-width:550px)  */
+
+
+  /* media 550px */
+
+  /* media 320px */
+
+@media (max-width: 320px) {
+
+  .container {
+    max-width: 320px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .about__card-info {
+    display: none;
+  }
+
+  .about__card-vertical {
+    border: none;
+    flex-direction: column;
+  }
+
+  .how__step:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .hero__title {
+    margin-bottom: 7px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .header__container {
+    padding: 17px 10px 13px 10px;
+  }
+
+  .hero__discription {
+    background-image: url(../img/balconies_320.png);
+    background-size: cover;
+    min-height: 308px;
+  }
+
+  .hero__discription-text {
+    padding: 61px 19px 49px 20px;
+  }
+
+  .hero__subtitle {
+    margin-bottom: 32px;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+  }
+
+  .header__menu {
+    padding-bottom: 0;
+  }
+
+  .hero__btn {
+    margin-left: 44px;
+    font-size: 12px;
+    padding: 14px 28px 13px 29px;
+  }
+}
 
 
 

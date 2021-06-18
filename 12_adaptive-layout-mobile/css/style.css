@@ -84,6 +84,10 @@
       padding-bottom: 10px;
     }
 
+    .header__menu {
+      display: none;
+    }
+
     .header__list {
       display: flex;
       padding-bottom: 2px;
@@ -734,6 +738,167 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
 }
 
 /* active */
+
+/* adaptive 1024px */
+
+@media (max-width: 1130px) {
+  .footer__right {
+    display: none;
+  }
+
+  .about__cards {
+    flex-direction: column;
+  }
+  
+  .header__list {
+    display: none;
+  }
+
+  .header__menu {
+    display: block;
+  }
+
+  .header__container {
+    padding: 25px 50px 22px 50px;
+  }
+
+  .header__logo {
+    padding-right: 7px;
+  }
+
+  .header__menu {
+    padding-bottom: 1px;
+  }
+
+  .container {
+    max-width: 954px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hero__discription {
+    background-image: url(../img/balconies_1024.png);
+    background-size: cover;
+    min-height: 668px;
+  }
+
+  .hero__title {
+    font-size: 60px;
+    line-height: 73px;
+  }
+
+  .hero__subtitle {
+    margin-bottom: 59px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .hero__discription-text {
+    padding-left: 77px;
+    padding-top: 164px;
+    padding-right: 46px;
+  }
+
+  .hero__title {
+    margin-bottom: 13px;
+  }
+
+  .about__title {
+    margin-top: 84px;
+    margin-bottom: 6px;
+    margin-left: auto;
+  }
+
+  .about__cards {
+    margin-top: 62px;
+  }
+
+  .about__card-left {
+    max-width: 924px;
+    margin-right: auto;
+    margin-bottom: 32px;
+  }
+
+  .about__card-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about__card-vertical {
+    padding-left: 76px;
+  }
+
+  .how__title {
+    margin-top: 86px;
+  }
+
+  .how__steps {
+    margin-bottom: 52px;
+  }
+
+  .how__text {
+    max-width: 437px;
+  }
+
+  .how__discription-btn {
+    margin-top: 24px;
+  }
+
+  .how__btn-left {
+    margin-bottom: 10px;
+  }
+
+  .how__img {
+    padding-left: 25px;
+    margin-top: 10px;
+  }
+
+  .faq__title {
+    margin-top: 86px;
+  }
+
+  .faq__item-question {
+    font-size: 20px;
+    line-height: 32px;
+    max-width: 756px;
+  }
+
+  .faq__list {
+    margin-top: 10px;
+    padding-top: 9px;
+  }
+
+  .footer__container {
+    padding-top: 50px;
+  }
+
+  .footer {
+    margin-top: 80px;
+  }
+
+  .footer__left {
+    max-width: 251px;
+  }
+
+  .footer__form-title {
+    margin-left: auto;
+  }
+
+  .footer__center {
+    margin-left: 132px;
+  }
+
+  .footer__form {
+    padding: 0;
+  }
+
+  .footer__form-btn {
+    padding: 22px 37px 18px 38px;
+  }
 
 
 

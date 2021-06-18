@@ -13,8 +13,12 @@
 <body>
   <header class="header">
     <div class="container header__container">
+      <button class="header__menu btn"><img src="./img/header_menu.png" alt="Меню"></button>
       <a class="header__logo" href="#">
-        <img src="./img/Logo.png">
+        <picture>
+          <source srcset="./img/Logo__1024.png" media="(max-width: 1024px)">
+          <img src="./img/Logo.png" alt="Логоти Евклид">
+        </picture>
       </a>
       <div class="header__right">
         <ul class="header__list">
@@ -78,7 +82,10 @@
         </p>
         <div class="about__cards">
           <div class="about__card-left">
-            <img class="about__card-left_img" src="./img/builder_1920.png" alt="О нас">
+            <picture>
+              <source class="about__card-img" srcset="./img/builder_1024.png" media="(max-width: 1130px)">
+              <img class="about__card-left_img" src="./img/builder_1920.png" alt="О нас">
+            </picture>
             <div class="about__card-info">
               <p class="about__card-subtitle">
                 Принимая во внимание показатели успешности, перспективное планирование способствует
@@ -145,7 +152,12 @@
               <button class="how__btn-right btn">Договор</button>
             </div>
           </div>
-          <div class="how__img"><img class="how__images" src="./img/how_1920.png" alt="Консультация"></div>
+          <div class="how__img">
+            <picture>
+              <source srcset="./img/how_1024.png" media="(max-width: 1130px)">
+              <img class="how__images" src="./img/how_1920.png" alt="Консультация">
+            </picture>
+          </div>
         </div>
       </div>
     </section>

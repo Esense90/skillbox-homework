@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -16,7 +16,7 @@
       <button class="header__menu btn"><img src="./img/header_menu.png" alt="Меню"></button>
       <a class="header__logo" href="#">
         <picture>
-          <source srcset="./img/Logo_320.png" media="(max-width: 320px)">
+          <source srcset="./img/Logo_320.png" media="(max-width: 390px)">
           <source srcset="./img/Logo__1024.png" media="(max-width: 1024px)">
           <img src="./img/Logo.png" alt="Логоти Евклид">
         </picture>
@@ -83,7 +83,8 @@
         </p>
         <div class="about__cards">
           <div class="about__card-left">
-            <picture>
+            <picture class="about__card-small">
+              <source class="about__card-img" srcset="./img/builder_320.png" media="(max-width: 390px)">
               <source class="about__card-img" srcset="./img/builder_768.png" media="(max-width: 840px)">
               <source class="about__card-img" srcset="./img/builder_1024.png" media="(max-width: 1130px)">
               <img class="about__card-left_img" src="./img/builder_1920.png" alt="О нас">
@@ -156,6 +157,7 @@
           </div>
           <div class="how__img">
             <picture>
+              <source srcset="./img/how_320.png" media="(max-width: 390px)">
               <source srcset="./img/how_768.png" media="(max-width: 840px)">
               <source srcset="./img/how_1024.png" media="(max-width: 1130px)">
               <img class="how__images" src="./img/how_1920.png" alt="Консультация">
@@ -227,7 +229,12 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__left">
-          <div class="footer__logo"><img src="./img/Logo_footer.png" alt="Логотип Евклид"></div>
+          <div class="footer__logo">
+            <picture>
+              <source srcset="./img/footerlogo_320.png" media="(max-width: 390px)">
+              <img src="./img/Logo_footer.png" alt="Логотип Евклид">
+            </picture>
+          </div>
           <ul class="footer__list">
             <li><a class="footer__item" href="#">О нас</a></li>
             <li><a class="footer__item" href="#">Проекты</a></li>

@@ -35,6 +35,9 @@
     --color-grey: #E5E5E5;
     --color-dark-grey: #414141;
     --main-color-black: #333333;
+    --color-slash: rgb(187, 184, 184);
+    --color-activ-batton: #000;
+    --color-activ-btn: #E1670E;
 }
 
   * {
@@ -42,6 +45,7 @@
       padding: 0;
       box-sizing: border-box;
       text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
   }
 
   body {
@@ -66,7 +70,7 @@
     outline: none;
   }
 
-  input, select {
+  input, select, textarea{
     border: none;
     appearance: none;
     outline: none;
@@ -88,7 +92,7 @@
     /* header */
 
     .header {
-      box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
     }
 
     .header__container {
@@ -100,6 +104,13 @@
 
     .header__menu {
       display: none;
+      height: 23px;
+      margin-top: 12px;
+      transform: rotate(180deg);
+    }
+
+    .header__menu > svg > * {
+      transition: fill 300ms ease;
     }
 
     .header__list {
@@ -121,8 +132,8 @@
       font-size: 18px;
       font-weight: 600;
       color: #333;
-      border-bottom: 1px solid #fff;
-      transition-property: border, color ;
+      border-bottom: 2px solid transparent;
+      transition-property: border-color ;
       transition-duration: 300ms;
       transition-timing-function: ease;
     }
@@ -170,7 +181,7 @@
       font-size: 23.4581px;
       font-weight: 700;
       color: #fff;
-      transition: background 400ms ease;
+      transition: background-color 400ms ease;
     }
 
     /* hero */
@@ -251,20 +262,18 @@
 
     .about__card-vertical-img_top {
       background-image: url(../img/about_top.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 190px;
-      height: 165px;
-      flex-shrink: 0;
     }
 
     .about__card-vertical-img_bottom {
       background-image: url(../img/about_bot.svg);
+    }
+
+    .about__img {
       background-repeat: no-repeat;
-      background-size: cover;
-      width: 190px;
-      height: 165px;
-      flex-shrink: 0;
+      background-size: contain;
+      margin-bottom: 4px;
+      min-width: 190px;
+      min-height: 165px;
     }
 
     .about__card-vertical {
@@ -272,27 +281,23 @@
       flex-direction: row;
       align-items: center;
       min-height: 295px;
-      padding-left: 59px;
-      padding-top: 59px;
-      padding-right: 115px;
-      padding-bottom: 59px;
+      padding: 63px 115px 59px 59px;
       border: 1px solid #CACACA;
     }
 
     .about__card-vertical-info {
-      padding-top: 3px;
       padding-left: 50px;
       max-width: 503px;
     }
 
     .card__vertical-title {
-      margin-bottom: 8px;
       font-weight: 700;
       font-size: 24px;
       color: #333333;
     }
 
     .card__vertical-subtitle {
+      padding-top: 8px;
       font-weight: 400;
       font-size: 16px;
       line-height: 32px;
@@ -388,6 +393,10 @@
       color: #333;
       border: 1px solid #333;
       transition: all 300ms ease;
+    }
+    
+    .slash {
+      color: rgb(187, 184, 184);
     }
 
     /* how */
@@ -537,7 +546,8 @@
     .footer__form-text {
       padding: 22px 24px 110px 24px;
       width: 100%;
-      min-height: 150px;
+      height: 150px;
+      resize: none;
       font-weight: 400;
       font-size: 16px;
       text-align: start;
@@ -551,7 +561,7 @@
     }
 
     .footer__label-input_text {
-      margin-bottom: 32px;
+      margin-bottom: 28px;
     }
 
     textarea {
@@ -690,7 +700,7 @@
 
   /* focus */
 
-a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__social-svg:focus {
+a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__social-svg:focus, .header__menu:focus {
   outline: 2px solid #FF9900;
   outline-offset: 2px;
 }
@@ -723,6 +733,27 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
 /* focus */
 
 /* active */
+
+.header__menu-svg:active .menu__fill1 {
+  fill: #E1670E;
+}
+
+.header__menu-svg:active .menu__fill2 {
+  fill: #E1670E;
+}
+
+.header__menu-svg:active .menu__fill3 {
+  fill: #E1670E;
+}
+
+.header__menu-svg:active .menu__fill1 {
+   width: 18px;
+}
+
+.header__menu-svg:active .menu__fill2 {
+  width: 25px;
+}
+
 
 .header__link:active {
   border-bottom: 2px solid #E1670E;
@@ -787,6 +818,7 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
   .header__list {
     display: none;
   }
+
 
   .header__menu {
     display: block;
@@ -973,6 +1005,7 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
 
   .header__menu {
     padding-bottom: 3px;
+    margin-top: 11px;
   }
 
   .footer__container {
@@ -1035,17 +1068,19 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
   }
 
   .about__card-vertical-img_top {
-    width: 114px;
-    height: 99px;
+    background-image: url(../img/about_top-768.svg);
+    min-width: 114px;
+    min-height: 99px;
   }
 
   .about__card-vertical-img_bottom {
-    width: 114px;
-    height: 99px;
+    background-image: url(../img/about_bot-768.svg);
+    min-width: 114px;
+    min-height: 99px;
   }
 
   .about__card-vertical {
-    padding: 24px 39px 24px 39px;
+    padding: 27px 39px 24px 39px;
     min-height: 235px
   }
 
@@ -1243,7 +1278,7 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
   }
 
   .header__menu {
-    padding-bottom: 0;
+    margin-top: 6px;
   }
 
   .hero__btn {
@@ -1279,7 +1314,7 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
 
   .about__card-info {
     align-items: flex-start;
-    padding-top: 210px;
+    padding: 210px 0 0 0;
     flex-direction: column;
     position: static;
     background: none;
@@ -1309,7 +1344,6 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
     margin-bottom: 31px;
   }
 
-
   .card__vertical-title {
     margin-top: 13px;
     margin-bottom: 4px;
@@ -1321,6 +1355,7 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
   .card__vertical-subtitle {
     font-size: 14px;
     line-height: 28px;
+    padding-top: 4px;
   }
 
   .about__card-vertical {
@@ -1331,19 +1366,19 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
   .about__card-vertical-img_top {
     background-image: url(../img/abouttop_320.png);
     background-repeat: no-repeat;
-    width: 64px;
-    height: 49px;
+    min-width: 64px;
+    min-height: 49px;
   }
 
   .about__card-vertical-img_bottom {
     background-image: url(../img/aboutbot_320.png);
     background-repeat: no-repeat;
-    width: 64px;
-    height: 49px;
+    min-width: 64px;
+    min-height: 49px;
   }
 
   .about__card-vertical-info {
-    padding: 0;
+    padding: 9px 0 0 0;
   }
 
   .how__title {
@@ -1462,7 +1497,7 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
   }
 
   .footer__label-input_text {
-    margin-bottom: 25px;
+    margin-bottom: 21px;
   }
 
   .footer__form-bottom {

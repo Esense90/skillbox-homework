@@ -272,8 +272,8 @@
       background-repeat: no-repeat;
       background-size: contain;
       margin-bottom: 4px;
-      width: 190px;
-      height: 165px;
+      min-width: 190px;
+      min-height: 165px;
     }
 
     .about__card-vertical {
@@ -1005,6 +1005,7 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
 
   .header__menu {
     padding-bottom: 3px;
+    margin-top: 11px;
   }
 
   .footer__container {
@@ -1067,17 +1068,19 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
   }
 
   .about__card-vertical-img_top {
-    width: 114px;
-    height: 99px;
+    background-image: url(../img/about_top-768.svg);
+    min-width: 114px;
+    min-height: 99px;
   }
 
   .about__card-vertical-img_bottom {
-    width: 114px;
-    height: 99px;
+    background-image: url(../img/about_bot-768.svg);
+    min-width: 114px;
+    min-height: 99px;
   }
 
   .about__card-vertical {
-    padding: 24px 39px 24px 39px;
+    padding: 27px 39px 24px 39px;
     min-height: 235px
   }
 
@@ -1275,7 +1278,7 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
   }
 
   .header__menu {
-    padding-bottom: 0;
+    margin-top: 6px;
   }
 
   .hero__btn {
@@ -1311,7 +1314,7 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
 
   .about__card-info {
     align-items: flex-start;
-    padding-top: 210px;
+    padding: 210px 0 0 0;
     flex-direction: column;
     position: static;
     background: none;
@@ -1341,7 +1344,6 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
     margin-bottom: 31px;
   }
 
-
   .card__vertical-title {
     margin-top: 13px;
     margin-bottom: 4px;
@@ -1353,6 +1355,7 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
   .card__vertical-subtitle {
     font-size: 14px;
     line-height: 28px;
+    padding-top: 4px;
   }
 
   .about__card-vertical {
@@ -1363,19 +1366,19 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
   .about__card-vertical-img_top {
     background-image: url(../img/abouttop_320.png);
     background-repeat: no-repeat;
-    width: 64px;
-    height: 49px;
+    min-width: 64px;
+    min-height: 49px;
   }
 
   .about__card-vertical-img_bottom {
     background-image: url(../img/aboutbot_320.png);
     background-repeat: no-repeat;
-    width: 64px;
-    height: 49px;
+    min-width: 64px;
+    min-height: 49px;
   }
 
   .about__card-vertical-info {
-    padding: 0;
+    padding: 9px 0 0 0;
   }
 
   .how__title {
@@ -1494,7 +1497,7 @@ a:focus, .header__search:focus, .how__step:focus, .footer__item:focus, .footer__
   }
 
   .footer__label-input_text {
-    margin-bottom: 25px;
+    margin-bottom: 21px;
   }
 
   .footer__form-bottom {

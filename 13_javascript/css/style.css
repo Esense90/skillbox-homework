@@ -145,18 +145,54 @@
     /* header */
 
     /* hero */
-
-    .hero__discription {
+          
+    .swiper__img1 {
       background-image: url(../img/balconies_1920.png);
       background-size: cover;
       min-height: 620px;
     }
+    
+    .swiper__img2 {
+      background-image: url(../img/brown.png);
+      background-size: cover;
+      min-height: 620px;
+    }    
 
-    .hero__discription-text {
+    .swiper__img3 {
+      background-image: url(../img/apartment.png);
+      background-size: cover;
+      min-height: 620px;
+    }  
+    
+    .swiper-pagination .swiper-pagination-bullet {
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.4);
+      opacity: inherit;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet-active {
+      background: #FFFFFF;;
+    }
+
+    .container > .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin-right: 16px;
+    }
+
+    .container > .swiper-container-horizontal>.swiper-pagination-bullets {
+      margin-bottom: 16px;
+      margin-left: 7px;
+    }
+                
+    .hero__discription {
+      position: absolute;
       padding-left: 81px;
       padding-top: 105px;
       padding-bottom: 100px;
       max-width: 894px;
+      z-index: 2;
     }
 
     .hero__title {

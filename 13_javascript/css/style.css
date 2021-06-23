@@ -847,6 +847,10 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
   color: #E1670E;
 }
 
+.step-active {
+  color: #E1670E;
+}
+
 .how__btn-left:active, .footer__form-btn:active {
   background-color: #E1670E;
 }

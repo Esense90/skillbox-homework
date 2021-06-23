@@ -11,4 +11,14 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 
-
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.how__step-link').forEach(function (howStepLink) {
+        howStepLink.addEventListener('click', function (event) {
+            const path = event.currentTarget.dataset.path
+            document.querySelectorAll('.how__step-link').forEach(function (howInfo) {
+                howInfo.classList.remove('step-active')
+            })
+            event.currentTarget.classList.add('step-active')
+        })
+    })
+})

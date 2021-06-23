@@ -185,14 +185,19 @@
       margin-bottom: 16px;
       margin-left: 7px;
     }
+
+    .container .swiper-wrapper {
+      position: absolute;
+    }
                 
     .hero__discription {
-      position: absolute;
+      position: relative;
       padding-left: 81px;
       padding-top: 105px;
       padding-bottom: 100px;
       max-width: 894px;
       z-index: 2;
+      pointer-events: none;
     }
 
     .hero__title {
@@ -218,6 +223,7 @@
       font-weight: 700;
       color: #fff;
       transition: background-color 400ms ease;
+      pointer-events: visible;
     }
 
     /* hero */
@@ -771,26 +777,19 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
 
 /* active */
 
-.header__menu-svg:active .menu__fill1 {
+.header__menu-svg > .menu__fill1.in-active {
+  width: 18px;
   fill: #E1670E;
 }
 
-.header__menu-svg:active .menu__fill2 {
-  fill: #E1670E;
-}
-
-.header__menu-svg:active .menu__fill3 {
-  fill: #E1670E;
-}
-
-.header__menu-svg:active .menu__fill1 {
-   width: 18px;
-}
-
-.header__menu-svg:active .menu__fill2 {
+.header__menu-svg > .menu__fill2.in-active {
   width: 25px;
+  fill: #E1670E;
 }
 
+.header__menu-svg > .menu__fill3.in-active {
+  fill: #E1670E;
+}
 
 .header__link:active {
   border-bottom: 2px solid #E1670E;
@@ -931,6 +930,35 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
 
 @media (max-width: 1130px) {
 
+  .header__list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    top: 100px;
+    bottom: 114px;
+    left: 0;
+    width: 250px;
+    padding: 46px;
+    background-color: #E5E5E5;
+    opacity: 1;
+    transition: transform .3s ease-in-out;
+    transform: translateX(-101%);
+    opacity: 0.9;
+  }
+
+  .header__item:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
+
+  .header__link {
+    font-size: 20px;
+  }
+
+  .header__list.active {
+    transform: none;
+  }
+
   .footer__container {
     padding-top: 50px;
     max-width: 954px;
@@ -951,12 +979,7 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
   .about__cards {
     flex-direction: column;
   }
-
-  .header__list {
-    display: none;
-  }
-
-
+ 
   .header__menu {
     display: block;
   }
@@ -980,13 +1003,7 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
     padding-left: 15px;
     padding-right: 15px;
   }
-
-  .hero__discription {
-    background-image: url(../img/balconies_1024.png);
-    background-size: cover;
-    min-height: 668px;
-  }
-
+  
   .hero__title {
     font-size: 60px;
     line-height: 73px;
@@ -996,6 +1013,14 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
     margin-bottom: 59px;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .hero__discription {
+    padding: 163px 44px 99px 41px;
+  }
+
+  .swiper-container {
+    min-height: 668px;
   }
 
   .about__container-img {
@@ -1186,6 +1211,21 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
     padding: 10px 15px 7px 15px;
   }
 
+  .header__list {
+    top: 69px;
+    bottom: 213px;
+    width: 230px;
+    padding: 46px;
+  }
+
+  .header__link {
+    font-size: 18px;
+  }
+
+  .header__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
   .header__menu {
     padding-bottom: 3px;
     margin-top: 11px;
@@ -1204,13 +1244,11 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
   }
 
   .hero__discription {
-    background-image: url(../img/balconies_768.png);
-    background-size: cover;
-    min-height: 662px;
+    padding: 60px 47px 57px 47px;
   }
 
-  .hero__discription-text {
-    padding: 163px 47px 57px 40px;
+  .swiper-container {
+    min-height: 600px;
   }
 
   .hero__title {
@@ -1364,12 +1402,37 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
 
 @media (max-width: 485px) {
 
+  .header__list {
+    top: 69px;
+    bottom: 313px;
+    width: 200px;
+    padding: 45px 30px 46px 30px;
+  }
+
+  .header__link {
+    font-size: 18px;
+  }
+
+  .header__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .hero__discription {
+    padding: 20px 15px 25px 18px;
+  }
+
+  .swiper-container {
+    min-height: 500px;
+  }
+
   .hero__title {
-    font-size: 40px;
+    font-size: 32px;
+    line-height: 48px;
   }
 
   .hero__subtitle {
     font-size: 16px;
+    margin-bottom: 35px;
   }
 
   .how__step:not(:last-child) {
@@ -1432,6 +1495,22 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
     padding-right: 5px;
   }
 
+  .header__list {
+    top: 69px;
+    bottom: 505px;
+    width: 150px;
+    padding: 45px 30px 46px 30px;
+  }
+
+  .header__link {
+    font-size: 16px;
+  }
+
+  .header__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  
+
   .about__card-vertical {
     border: none;
     flex-direction: column;
@@ -1439,6 +1518,16 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
 
   .how__step:not(:last-child) {
     margin-right: 30px;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .container > .swiper-container-horizontal>.swiper-pagination-bullets {
+    margin-bottom: 1px;
+    margin-left: 6px;
   }
 
   .hero__title {
@@ -1451,15 +1540,13 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
   .header__container {
     padding: 17px 5px 13px 5px;
   }
-
+  
   .hero__discription {
-    background-image: url(../img/balconies_320.png);
-    background-size: cover;
-    min-height: 308px;
+    padding: 61px 23px 60px 23px;
   }
 
-  .hero__discription-text {
-    padding: 61px 19px 49px 20px;
+  .swiper-container {
+    min-height: 308px;
   }
 
   .hero__subtitle {
@@ -1474,7 +1561,7 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
   }
 
   .hero__btn {
-    margin-left: 44px;
+    margin-left: 41px;
     font-size: 12px;
     padding: 14px 28px 13px 29px;
   }

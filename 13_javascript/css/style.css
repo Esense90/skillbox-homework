@@ -377,16 +377,54 @@
     .how__discription {
       display: flex;
       flex-direction: column;
+      padding-right: 142px;
+    }
+
+    .how__article {
+      display: flex;
     }
 
     .how__info {
       display: flex;
       justify-content: space-between;
+      display: none;
+    }
+    
+    .how__info-active {
+      display: flex;
+      flex-direction: row-reverse;
     }
 
-    .how__img {
+    .how__img1 {
       margin-top: 8px;
       background-image: url(../img/how_1920.png);
+      width: 870px;
+      min-height: 460px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .how__img2 {
+      margin-top: 8px;
+      background-image: url(../img/how2.png);
+      width: 870px;
+      min-height: 460px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .how__img3 {
+      margin-top: 8px;
+      background-image: url(../img/how3.png);
+      width: 870px;
+      min-height: 460px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .how__img4 {
+      margin-top: 8px;
+      background-image: url(../img/how4.png);
       width: 870px;
       min-height: 460px;
       background-repeat: no-repeat;
@@ -803,6 +841,10 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
 .about__card-btn:active {
   background-color: #E1670E;
   border: 3px solid #E1670E;
+}
+
+.active-btn {
+  color: #E1670E;
 }
 
 .how__btn-left:active, .footer__form-btn:active {

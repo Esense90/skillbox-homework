@@ -399,7 +399,7 @@
       margin-top: 8px;
       background-image: url(../img/how_1920.png);
       width: 870px;
-      min-height: 460px;
+      height: 460px;
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -408,7 +408,7 @@
       margin-top: 8px;
       background-image: url(../img/how2.png);
       width: 870px;
-      min-height: 460px;
+      height: 460px;
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -417,7 +417,7 @@
       margin-top: 8px;
       background-image: url(../img/how3.png);
       width: 870px;
-      min-height: 460px;
+      height: 460px;
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -426,7 +426,7 @@
       margin-top: 8px;
       background-image: url(../img/how4.png);
       width: 870px;
-      min-height: 460px;
+      height: 460px;
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -495,7 +495,7 @@
     .faq__list-item {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: stretch;
       padding-top: 31px;
       padding-bottom: 29px;
       border-top: 1px solid #CACACA;
@@ -512,6 +512,7 @@
       font-size: 24px;
       color: #333333;
       transition: color 300ms ease;
+      padding-top: 13px;
     }
 
     .faq__img-path {
@@ -522,6 +523,19 @@
       transition: fill .4s ease;
     }
 
+    .ui-accordion-content {
+      padding-top: 30px;
+      padding-bottom: 11px;
+      max-width: 1003px;
+      font-size: 16px;
+      line-height: 32px;
+      color: #333;
+    }
+
+    .faq__content-top {
+      padding-bottom: 20px;
+    }
+    
     /* faq */
 
     /* footer */
@@ -859,6 +873,10 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
   background-color: #000;
 }
 
+.ui-accordion-header-active .faq__item-img {
+  transform: rotate(45deg);
+}
+
 .footer__item:active, .how__step-link:active {
   color: #E1670E;
 }
@@ -954,6 +972,10 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
   .about__card-vertical-info {
     padding-left: 24px;
     max-width: 476px;
+  }
+
+  .how__discription {
+    padding-right: 30px;
   }
 
   .footer__form-bottom {
@@ -1158,13 +1180,13 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
     margin-bottom: 10px;
   }
 
-  .how__img {
+  .how__img1, .how__img2, .how__img3, .how__img4 {
     margin-top: 10px;
-    background-image: url(../img/how_1024.png);
     width: 437px;
-    min-height: 689px;
-    background-repeat: no-repeat;
-    background-size: auto;
+    height: 689px;
+  }
+  .how__discription {
+    padding-right: 50px;
   }
 
   .faq__title {
@@ -1259,7 +1281,7 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
 
   .header__list {
     top: 69px;
-    bottom: 213px;
+    bottom: 151px;
     width: 230px;
     padding: 46px;
   }
@@ -1290,7 +1312,7 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
   }
 
   .hero__discription {
-    padding: 60px 47px 57px 47px;
+    padding: 163px 38px 160px 41px;
   }
 
   .swiper-container {
@@ -1361,20 +1383,21 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
   }
 
   .how__info {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
-  .how__img {
+  .how__img1, .how__img2, .how__img3, .how__img4 {
     margin-bottom: 40px;
-    background-image: url(../img/how_768.png);
     width: 100%;
-    min-height: 284px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 284px;
   }
 
   .how__text {
     max-width: 667px;
+  }
+
+  .how__discription {
+    padding-right: 0;
   }
 
   .faq__title {
@@ -1724,14 +1747,11 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
     letter-spacing: 0.1px;
   }
 
-  .how__img {
+  .how__img1, .how__img2, .how__img3, .how__img4 {
     margin-bottom: 0;
     margin-top: 8px;
-    background-image: url(../img/how_320.png);
-    width: 290px;
-    min-height: 160px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
+    height: 160px;
   }
 
   .how__discription {

@@ -111,7 +111,7 @@
     .header__menu > svg > * {
       transition: fill 300ms ease, width 300ms;
     }
-    
+
     .header__list {
       display: flex;
       padding-bottom: 2px;
@@ -144,25 +144,25 @@
     /* header */
 
     /* hero */
-          
+
     .swiper__img1 {
       background-image: url(../img/balconies_1920.png);
       background-size: cover;
       min-height: 620px;
     }
-    
+
     .swiper__img2 {
       background-image: url(../img/brown.png);
       background-size: cover;
       min-height: 620px;
-    }    
+    }
 
     .swiper__img3 {
       background-image: url(../img/apartment.png);
       background-size: cover;
       min-height: 620px;
-    }  
-    
+    }
+
     .swiper-pagination .swiper-pagination-bullet {
       width: 15px;
       height: 15px;
@@ -188,7 +188,7 @@
     .container .swiper-wrapper {
       position: absolute;
     }
-                
+
     .hero__discription {
       position: relative;
       padding-left: 81px;
@@ -372,7 +372,7 @@
       color: #333;
       transition: color 300ms ease;
     }
-    
+
     .how__discription {
       display: flex;
       flex-direction: column;
@@ -384,11 +384,9 @@
     }
 
     .how__info {
-      display: flex;
-      justify-content: space-between;
       display: none;
     }
-    
+
     .how__info-active {
       display: flex;
       flex-direction: row-reverse;
@@ -469,7 +467,7 @@
       border: 1px solid #333;
       transition: all 300ms ease;
     }
-       
+
     /* how */
 
     /* faq */
@@ -491,7 +489,7 @@
       border-bottom: 1px solid #CACACA;
       transition: border-color 300ms ease;
     }
-               
+
     .accordion__title {
       display: flex;
       align-items: center;
@@ -521,7 +519,7 @@
     .accordion__img > path {
       transition: fill 300ms ease;
     }
-        
+
     /* faq */
 
     /* footer */
@@ -717,7 +715,7 @@
     .how__step-link:hover {
       color: #FF9900;
     }
-    
+
     .how__btn-left:hover {
       background-color: #F7B045;
     }
@@ -726,7 +724,7 @@
       background-color: #666;
       color: #fff;
     }
-        
+
     .footer__item:hover {
       color: #FF9900;
     }
@@ -774,7 +772,7 @@
   .accordion__discription:hover .accordion__img path {
     fill: #FFFFFF;
   }
-   
+
   /* hover */
 
   /* focus */
@@ -897,7 +895,7 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
   min-height: 640px;
   max-width: 100%;
  }
- 
+
  .about__card-subtitle {
   padding-right: 170px;
  }
@@ -937,11 +935,11 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
   .about__card-vertical {
     padding: 64px 12px 60px 13px;
   }
-  
+
 
   .about__cards-vertical {
     flex-direction: row;
-    
+
   }
 
   .about__card-vertical:not(:last-child) {
@@ -1014,7 +1012,7 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
     padding-left: 13px;
     padding-right: 13px;
    }
-   
+
    picture {
      display: block;
    }
@@ -1026,7 +1024,7 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
   .about__cards {
     flex-direction: column;
   }
- 
+
   .header__menu {
     display: block;
   }
@@ -1050,7 +1048,7 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
     padding-left: 15px;
     padding-right: 15px;
   }
-  
+
   .hero__title {
     font-size: 60px;
     line-height: 73px;
@@ -1171,11 +1169,11 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
   .faq__title {
     margin-top: 76px;
   }
-  
+
   .item__question {
     max-width: 756px;
   }
-  
+
   .footer__container {
     padding-top: 50px;
   }
@@ -1459,7 +1457,7 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
   .header__item:not(:last-child) {
     margin-bottom: 20px;
   }
-  
+
   .hero__discription {
     padding: 20px 15px 25px 18px;
   }
@@ -1501,7 +1499,7 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
     flex-direction: column;
     background: none;
     background: rgba(0, 0, 0, 0.5);
-    padding: 0px 20px 10px 20px;
+    padding: 0 20px 10px 20px;
   }
 
   .about__card-subtitle {
@@ -1517,7 +1515,7 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
     font-size: 14px;
     max-width: 286px;
   }
-  
+
 }
 
   /* media 415px */
@@ -1548,7 +1546,7 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
   .header__item:not(:last-child) {
     margin-bottom: 30px;
   }
-  
+
 
   .about__card-vertical {
     border: none;
@@ -1563,7 +1561,7 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
     width: 10px;
     height: 10px;
   }
-  
+
   .container > .swiper-container-horizontal>.swiper-pagination-bullets {
     margin-bottom: 1px;
     margin-left: 6px;
@@ -1579,7 +1577,7 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
   .header__container {
     padding: 17px 5px 13px 5px;
   }
-  
+
   .hero__discription {
     padding: 61px 23px 60px 23px;
   }
@@ -1743,7 +1741,6 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
     margin-bottom: 0;
     margin-right: 10px;
     font-size: 12px;
-    padding: 0;
     padding: 13px 42px 11px 44px;
   }
 
@@ -1793,12 +1790,12 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
 
   .footer__form-name {
     font-size: 14px;
-    padding: 22px 0px 22px 20px;
+    padding: 22px 0 22px 20px;
   }
 
   .footer__form-email {
     font-size: 14px;
-    padding: 22px 0px 22px 20px;
+    padding: 22px 0 22px 20px;
   }
 
   .footer__form-text {

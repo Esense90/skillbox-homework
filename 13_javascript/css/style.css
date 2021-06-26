@@ -1569,7 +1569,7 @@ fill: #FFFFFF;
   /* media 320px */
 
 @media (max-width: 390px) {
-
+  
   .search__input {
     display: block;
     position: absolute;
@@ -1598,7 +1598,7 @@ fill: #FFFFFF;
 
    input[type=text]:focus {
      background-color: #fff;
-     color: #ADADAD;;
+     color: #ADADAD;
    }
 
   .search__input.active {
@@ -1621,11 +1621,12 @@ fill: #FFFFFF;
     display: block;
     position: absolute;
     z-index: 3;
-    top: -777px;
+    top: 23px;
     right: 0;
     bottom: 0;
     left: 281px;
-    transform: translateY(-50%);
+    height: 25px;
+    transform: translateY(-200%);
   }
 
   .closed__search-btn.active {

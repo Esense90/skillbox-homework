@@ -41,10 +41,11 @@
 
   * {
       margin: 0;
-      padding: 0;
+      padding: 0;     
       box-sizing: border-box;
       text-decoration: none;
       -webkit-tap-highlight-color: transparent;
+      outline: none;
   }
 
   body {
@@ -751,7 +752,7 @@
       background-color: rgba(255, 153, 0, 0.7);
   }
 
-   .accordion__title:hover {
+  .accordion__title:hover {
       color: #FF9900;
   }
 
@@ -803,6 +804,30 @@ a:focus, .header__search:focus, .how__step-link:focus, .footer__item:focus, .foo
 
  input:focus {
   background-color: #666;
+}
+
+.accordion__discription:focus .accordion__title {
+  color: #FF9900;
+}
+
+.accordion__discription:focus {
+border-top: 1px solid #FF9900;
+}
+
+.accordion__discription:focus + .accordion__discription {
+ border-top: 1px solid #FF9900;
+}
+
+.accordion__discription-last:focus {
+ border-bottom: 1px solid #FF9900;
+}
+
+.accordion__discription:focus .accordion__img ellipse {
+fill: #FF9900;
+}
+
+.accordion__discription:focus .accordion__img path {
+fill: #FFFFFF;
 }
 
 /* focus */

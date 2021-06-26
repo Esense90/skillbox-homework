@@ -7,7 +7,7 @@
       animate: 400,
       icons: false,
     });
-  } );
+  });
   
 
   

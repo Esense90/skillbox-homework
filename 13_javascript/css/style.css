@@ -41,7 +41,7 @@
 
   * {
       margin: 0;
-      padding: 0;     
+      padding: 0;
       box-sizing: border-box;
       text-decoration: none;
       -webkit-tap-highlight-color: transparent;
@@ -140,6 +140,10 @@
 
     .header__search-rect, .header__search-path {
       transition: all 300ms ease;
+    }
+
+    .search__input {
+      display: none;
     }
 
     /* header */
@@ -519,6 +523,18 @@
 
     .accordion__img > path {
       transition: fill 300ms ease;
+    }
+
+    .ui-accordion-header-active .accordion__img {
+      transform: rotate(45deg);
+    }
+
+    .accordion__img {
+      transition: transform 300ms ease;
+    }
+
+    .slash {
+      color: #CACACA;
     }
 
     /* faq */
@@ -1014,6 +1030,24 @@ fill: #FFFFFF;
     background-color: #fff;
     transition: transform .3s ease-in-out;
     transform: translateX(-101%);
+  }
+
+  .search__input {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 6px;
+    bottom: 780px;
+    left: 953px;
+    width: 250px;
+    padding: 18px;
+    background-color: rgb(131, 11, 11);
+    transition: transform .3s ease-in-out;
+    transform: translateX(30%);
+  }
+
+  .search__input.active {
+    transform: none;
   }
 
   .header__item:not(:last-child) {

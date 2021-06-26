@@ -9,8 +9,10 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="js/burger_menu.js">
   <link rel="stylesheet" href="./js/tabs.js">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./js/search.js">
+
 
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -58,17 +60,22 @@
             <a class="header__link" href="#">Контакты</a>
           </li>
         </ul>
-        <button class="header__search btn" aria-label="Найти">
-          <svg class="header__search-svg" width="24" height="24" viewbox="0 0 24 24" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <rect class="header__search-rect" width="7.56126" height="1.89031"
-              transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333" />
-            <path class="header__search-path"
-              d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
-              stroke="#333333" stroke-width="2" />
-          </svg>
-        </button>
-      </div>
+        <div class="header__search">
+          <form>
+            <input class="search__input" type="search" placeholder="Что будем искать?">
+            <button class="header__search-btn btn" aria-label="Найти">
+              <svg class="header__search-svg" width="24" height="24" viewbox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect class="header__search-rect" width="7.56126" height="1.89031"
+                  transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333" />
+                <path class="header__search-path"
+                  d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
+                  stroke="#333333" stroke-width="2" />
+              </svg>
+            </button>
+          </form>
+          </div>
+              </div>
     </div>
   </header>
 
@@ -249,11 +256,11 @@
 
     <section class="faq">
       <div class="container">
-        <h2 class="faq__title" tabindex="-1">Часто задаваемые вопросы</h2>
+        <h2 class="faq__title">Часто задаваемые вопросы</h2>
         <div id="accordion">
           <div class="accordion__discription" tabindex="0">
-            <h3 class="accordion__title" tabindex="-1">Из чего формируется конечная стоимость проекта?
-              <svg class="accordion__img" width="50" height="50" viewBox="0 0 50 50" fill="none"
+            <h3 tabindex="-1" class="accordion__title">Из чего формируется конечная стоимость проекта?
+              <svg class="accordion__img" width="50" height="50" viewbox="0 0 50 50" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -278,8 +285,8 @@
             </p>
           </div>
           <div class="accordion__discription" tabindex="0">
-            <h3 class="accordion__title">У меня есть свой проект. Сможем ли мы его доработать / реализовать?
-              <svg class="accordion__img" width="50" height="50" viewBox="0 0 50 50" fill="none"
+            <h3 class="accordion__title"><span>У меня есть свой проект. Сможем ли мы его доработать <span class="slash">/</span> реализовать?</span>
+              <svg class="accordion__img" width="50" height="50" viewbox="0 0 50 50" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -304,8 +311,8 @@
             </p>
           </div>
           <div class="accordion__discription" tabindex="0">
-            <h3 class="accordion__title">У меня есть свой проект. Сможем ли мы его доработать / реализовать?
-              <svg class="accordion__img" width="50" height="50" viewBox="0 0 50 50" fill="none"
+            <h3 class="accordion__title">Я выбираю между разными компаниями. В чём ваше отличие?
+              <svg class="accordion__img" width="50" height="50" viewbox="0 0 50 50" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -330,8 +337,8 @@
             </p>
           </div>
           <div class="accordion__discription" tabindex="0">
-            <h3 class="accordion__title">У меня есть свой проект. Сможем ли мы его доработать / реализовать?
-              <svg class="accordion__img" width="50" height="50" viewBox="0 0 50 50" fill="none"
+            <h3 class="accordion__title"><span>Могу ли я делегировать вам работу <span class="slash">/</span> согласование с подрядчиком <span class="slash">/</span> организацией?</span>
+              <svg class="accordion__img" width="50" height="50" viewbox="0 0 50 50" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -355,9 +362,9 @@
               представлены в исключительно положительном свете.
             </p>
           </div>
-          <div class="accordion__discription" tabindex="0">
-            <h3 class="accordion__title">У меня есть свой проект. Сможем ли мы его доработать / реализовать?
-              <svg class="accordion__img" width="50" height="50" viewBox="0 0 50 50" fill="none"
+          <div class="accordion__discription accordion__discription-last" tabindex="0">
+            <h3 class="accordion__title">Могу ли я вернуть деньги на каком-либо из этапов работ?
+              <svg class="accordion__img" width="50" height="50" viewbox="0 0 50 50" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -381,6 +388,7 @@
               представлены в исключительно положительном свете.
             </p>
           </div>
+        </div>
         </div>
     </section>
 
@@ -485,6 +493,7 @@
     </footer>
 
   </main>
+  <script src="./js/search.js"></script>
   <script src="./js/accordion.js"></script>
   <script src="./js/tabs.js"></script>
   <script src="./js/swaiper.js"></script>

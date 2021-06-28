@@ -112,7 +112,7 @@
     .header__menu-closed {
       display: none;
     }
-
+    
     .header__menu > svg > * {
       transition: fill 300ms ease, width 300ms;
     }
@@ -716,13 +716,21 @@
     .header__link:hover {
       border-bottom: 2px solid #FF9900;
     }
-
-     .header__search:hover .header__search-rect {
+    
+    .header__search:hover .header__search-rect {
       fill: #FF9900;
     }
 
     .header__search:hover .header__search-path {
       stroke: #FF9900;
+    }
+
+    .menu__closed-svg:hover rect {
+      fill: #FF9900;
+    }
+
+    .header__menu-svg:hover rect {
+      fill: #FF9900;
     }
 
     .hero__btn:hover {
@@ -798,7 +806,7 @@
 
   /* focus */
 
-a:focus, .header__search-btn:focus, .how__step-link:focus, .footer__item:focus, .footer__social-svg:focus, .header__menu:focus, .closed__search-btn:focus {
+a:focus, .header__search-btn:focus, .how__step-link:focus, .footer__item:focus, .footer__social-svg:focus, .header__menu:focus, .closed__search-btn:focus, .header__menu-closed:focus {
   outline: 2px solid #FF9900;
   outline-offset: 2px;
 }
@@ -872,6 +880,10 @@ fill: #FFFFFF;
 
 .closed__search-btn:active .closed__search-svg circle {
   stroke: #333;
+}
+
+.header__menu-closed:active .menu__closed-svg rect {
+  fill: #E1670E;
 }
 
 .hero__btn:active {
@@ -1103,7 +1115,11 @@ fill: #FFFFFF;
     display: block;
     width: 23px;
     height: 23px;
-    padding-bottom: 126px;
+    margin-bottom: 103px;
+  }
+
+  .header__menu-closed > .menu__closed-svg > rect {
+    transition: fill 300ms ease;
   }
 
   .footer__container {
@@ -1407,7 +1423,7 @@ fill: #FFFFFF;
     display: block;
     width: 23px;
     height: 23px;
-    padding-bottom: 126px;
+    margin-bottom: 126px;
   }
 
   .header__list {
@@ -1633,7 +1649,7 @@ fill: #FFFFFF;
     display: block;
     width: 23px;
     height: 23px;
-    padding-bottom: 90px;
+    margin-bottom: 90px;
   }
 
   .header__list {
@@ -1726,14 +1742,7 @@ fill: #FFFFFF;
   .closed__search-btn {
     height: 24px;
   }
-
-  .header__menu-closed {
-    display: block;
-    width: 23px;
-    height: 23px;
-    padding-bottom: 90px;
-  }
-
+  
   .swiper-container {
     min-height: 475px;
   }
@@ -1746,7 +1755,7 @@ fill: #FFFFFF;
     display: block;
     width: 23px;
     height: 23px;
-    padding-bottom: 57px;
+    margin-bottom: 57px;
   }
 
   .header__list {
@@ -1880,7 +1889,7 @@ fill: #FFFFFF;
     display: block;
     width: 23px;
     height: 23px;
-    padding-bottom: 57px;
+    margin-bottom: 34px;
   }
 
 

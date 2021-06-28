@@ -6,15 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="js/burger_menu.js">
   <link rel="stylesheet" href="./js/tabs.js">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
@@ -42,12 +39,14 @@
       </a>
       <div class="header__right">
         <ul class="header__list">
-          <button class="header__menu-closed btn">
-            <svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="2.09094" width="29.5699" height="2.95699" transform="rotate(45 2.09094 0)" fill="#333333" />
-              <rect y="20.9092" width="29.5699" height="2.95699" transform="rotate(-45 0 20.9092)" fill="#333333" />
-            </svg>
-          </button>
+          <li>
+            <button class="header__menu-closed btn">
+              <svg class="menu__closed-svg" width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2.09094" width="29.5699" height="2.95699" transform="rotate(45 2.09094 0)" fill="#333333" />
+                <rect y="20.9092" width="29.5699" height="2.95699" transform="rotate(-45 0 20.9092)" fill="#333333" />
+              </svg>
+            </button>
+          </li>
           <li class="header__item">
             <a class="header__link" href="#">О нас</a>
           </li>
@@ -78,7 +77,9 @@
       </div>
       <div class="header__search-adaptive">
         <form class="header__search-adaptive_form">
-          <input class="search__input-adaptive" type="text" placeholder="Что будем искать?">
+          <label>
+            <input class="search__input-adaptive" type="text" placeholder="Что будем искать?">
+          </label>
           <button class="header__search-btn_adaptive btn" aria-label="Найти" type="button">
             <svg class="header__search-svg_adaptive" width="24" height="24" viewbox="0 0 24 24" fill="none">
               <rect class="header__search-rect_adaptive" width="7.56126" height="1.89031"
@@ -482,35 +483,39 @@
             </a>
           </div>
         </div>
-        <div class="footer__center">
-          <h3 class="footer__form-title">Оставить заявку</h3>
-          <form class="footer__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-            <label class="footer__label-input" aria-label="Введите фамилию, имя и отчество">
-              <input class="footer__form-name" name="name" type="text" placeholder="Фамилия, имя и отчество*">
-            </label>
-            <label class="footer__label-input" aria-label="Введите адрес электронной почты">
-              <input class="footer__form-email" name="email" type="email" placeholder="E-mail*">
-            </label>
-            <label class="footer__label-input_text" aria-label="Введите текст сообщения">
-              <textarea class="footer__form-text" name="text" type="text" placeholder="Сообщение"></textarea>
-            </label>
-            <div class="footer__form-bottom">
-              <button class="footer__form-btn btn" type="submit" name="Submit">Отправить данные</button>
-              <label class="footer__label">
-                <input class="footer__form-checkbox" type="checkbox" checked />
-                <span class="footer__igree">Согласен на обработку данных</span>
+        <section>
+          <div class="footer__center">
+            <h3 class="footer__form-title">Оставить заявку</h3>
+            <form class="footer__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+              <label class="footer__label-input" aria-label="Введите фамилию, имя и отчество">
+                <input class="footer__form-name" name="name" type="text" placeholder="Фамилия, имя и отчество*">
               </label>
-            </div>
-          </form>
-        </div>
+              <label class="footer__label-input" aria-label="Введите адрес электронной почты">
+                <input class="footer__form-email" name="email" type="email" placeholder="E-mail*">
+              </label>
+              <label class="footer__label-input_text" aria-label="Введите текст сообщения">
+                <textarea class="footer__form-text" name="text" type="text" placeholder="Сообщение"></textarea>
+              </label>
+              <div class="footer__form-bottom">
+                <button class="footer__form-btn btn" type="submit" name="Submit">Отправить данные</button>
+                <label class="footer__label">
+                  <input class="footer__form-checkbox" type="checkbox" checked />
+                  <span class="footer__igree">Согласен на обработку данных</span>
+                </label>
+              </div>
+            </form>
+          </div>
+        </section>
         <div class="footer__right">
-          Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
-          факта:
-          разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития.
-          Таким
-          образом, консультация с широким активом обеспечивает широкому кругу (специалистов) участие в
-          формировании
-          стандартных подходов.
+          <p>
+            Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
+            факта:
+            разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития.
+            Таким
+            образом, консультация с широким активом обеспечивает широкому кругу (специалистов) участие в
+            формировании
+            стандартных подходов.
+          </p>
         </div>
       </div>
     </footer>

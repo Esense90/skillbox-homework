@@ -864,6 +864,10 @@ fill: #FF9900;
 fill: #FFFFFF;
 }
 
+.container > .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:focus {
+  background-color: #FF9900;
+}
+
 /* focus */
 
 /* active */
@@ -1036,6 +1040,7 @@ fill: #FFFFFF;
   .header__search-adaptive {
     display: block;
     position: absolute;
+    visibility: hidden;
     z-index: 10;
     top: 0;
     right: 0;
@@ -1049,6 +1054,7 @@ fill: #FFFFFF;
 }
 
   .header__search-adaptive.active {
+    visibility: visible;
     transform: none;
   }
 
@@ -1084,6 +1090,7 @@ fill: #FFFFFF;
 
   .header__list {
     display: flex;
+    visibility: hidden;
     flex-direction: column;
     position: absolute;
     z-index: 10;
@@ -1109,6 +1116,7 @@ fill: #FFFFFF;
 
   .header__list.active {
     transform: none;
+    visibility: visible;
   }
 
   .header__menu-closed {

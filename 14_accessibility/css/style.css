@@ -112,7 +112,7 @@
     .header__menu-closed {
       display: none;
     }
-    
+
     .header__menu > svg > * {
       transition: fill 300ms ease, width 300ms;
     }
@@ -716,7 +716,7 @@
     .header__link:hover {
       border-bottom: 2px solid #FF9900;
     }
-    
+
     .header__search:hover .header__search-rect {
       fill: #FF9900;
     }
@@ -866,6 +866,10 @@ fill: #FFFFFF;
 
 .container > .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:focus {
   background-color: #FF9900;
+}
+
+.footer__form-checkbox:focus {
+  outline: 1px solid #FF9900;
 }
 
 /* focus */
@@ -1750,7 +1754,7 @@ fill: #FFFFFF;
   .closed__search-btn {
     height: 24px;
   }
-  
+
   .swiper-container {
     min-height: 475px;
   }

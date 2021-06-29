@@ -3,7 +3,7 @@
       collapsible: true,
       header: "h3",
       heightStyle: "content",
-      active: "none",
+      active: false,
       animate: 400,
       icons: false,
     });

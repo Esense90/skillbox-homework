@@ -4,4 +4,5 @@ const element = document.querySelector('select');
         shouldSort: false,
         itemSelectText: '',
         shouldSortItems: true,
+
 });

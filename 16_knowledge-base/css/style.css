@@ -83,7 +83,7 @@ body {
   border-radius: 10px;
   background-color: var(--color-white);
 }
- 
+
  .checkbox {
 	display: block;
 	margin: 0 0 20px 0;
@@ -103,8 +103,8 @@ body {
 
 .checkbox span {
 	display: inline-block;
-	position: relative; 
-	padding: 0 0 0 24px; 
+	position: relative;
+	padding: 0 0 0 24px;
   font-family: 'open-sans';
   font-size: 14px;
   color: var(--color-grey);
@@ -147,7 +147,7 @@ body {
   padding: 0;
   min-height: 39px;
   width: 176px;
-  border-radius: 10px; 
+  border-radius: 10px;
   background-color: var(--color-white);
 }
 
@@ -155,80 +155,6 @@ body {
   opacity: inherit;
 }
 
-.choices[data-type*=select-one] .choices__inner {
-  padding: 0;
-}
-
-.choices[data-type*=select-one]:after {
-  content: url(../img/arrow.svg);
-  height: 8;
-  width: 8;
-  border: none;
-  position: absolute;
-  right: 27.5px;
-  top: 50%;
-  margin-top: -8.5px;
-  pointer-events: none;
-}
-
-.choices[data-type*=select-one].is-open:after {
-  content: url(../img/Rectangle\ 141.svg);
-  margin-top: -4.5px;
-}
-
-.choices__list--dropdown {
-  visibility: hidden;
-  z-index: 1;
-  position: absolute;
-  width: 178px;
-  height: 253px;
-  background-color: #fff;
-  top: 100%;
-  margin-top: 0;
-  border-bottom-left-radius: 10px; 
-  border-bottom-right-radius: 10px; 
-  overflow: hidden;
-  word-break: normal;
-  will-change: auto;
-}
-
-.is-open .choices__list--dropdown {
-  right: -1px;
-  border-top: none;
-  border-bottom: 1px solid #CCB26E;
-  border-right: 1px solid #CCB26E;
-  border-left: 1px solid #CCB26E;
-  border-color: #CCB26E;
-}
-
-.is-open .choices__inner {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px; 
-  border-bottom-left-radius: 10px; 
-}
-
-.choices.is-open {
-  border-left: 1px solid #CCB26E;
-  border-right: 1px solid #CCB26E;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  background-color: #fff;
-}
-
-.is-focused .choices__inner, .is-open .choices__inner {
-  border-color: #CCB26E;
-}
-
-.choices__list--dropdown .choices__item {
-  font-family: 'open-sans';
-  font-size: 14px;
-  color: #333333;
-}
-
-.is-selected {
-  display: none;
-}
 
 
 
@@ -238,8 +164,10 @@ body {
 
 
 
- 
- 
+
+
+
+
 
 
 

@@ -54,7 +54,11 @@ input, select, textarea{
 
 body {
   background-color: var(--color-background);
+}
+
+.container {
   display: flex;
+  height: 0;
 }
 
 
@@ -134,41 +138,96 @@ body {
 
 .select__container {
   margin-top: 70px;
+  margin-left: 100px;
+  width: 176px;
 }
 
-.choices__list--single {
-  padding: 8px 92px 10px 14px;
-  font-family: 'open-sans';
-  font-size: 14px;
-  color: var(--color-grey);
+.is-selected {
+  display: none;
 }
 
 .choices__inner {
-  padding: 0;
-  min-height: 39px;
   width: 176px;
+  min-height: 0;
+  padding: 9px 10px 0 8px;
   border-radius: 10px;
-  background-color: var(--color-white);
+  border: none;
 }
 
-.choices__placeholder {
-  opacity: inherit;
+.choices__inner, .choices__item--selectable {
+  font-family: 'open-sans';
+  color: #333;
+  font-size: 14px;
 }
 
+.choices__list--dropdown {
+  height: 257px;
+}
 
+.is-active.choices__list--dropdown{
+  border-bottom: 1px solid #CCB26E;
+  border-left: 1px solid #CCB26E;
+  border-right: 1px solid #CCB26E;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: none;
+}
 
+.is-open .choices__inner {
+  border: 1px solid #CCB26E;
+  border-radius: 10px;
+  z-index: 2;
+}
 
+.choices__list--dropdown .choices__list {
+  top: 28px;
+}
 
+.choices__list--dropdown {
+  top: 82%;
+  z-index: -1;
+}
 
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+  background-color: #fff;
+}
 
+.choices__list--dropdown .choices__item {
+  padding: 0 0 0 14px;
+}
 
+.choices__item:not(:last-child) {
+  margin-bottom: 20px;
+}
 
+.choices[data-type*=select-one] .choices__inner {
+  padding-bottom: 5.5px;
+}
 
+.choices__list--single {
+  padding: 0px 16px 4px 7px;
+}
 
+.choices[data-type*=select-one]:after {
+  display: none;
+}
 
+.choices[data-type*=select-one] .choices__inner::after {
+  content: url(../img/arrow.svg);
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  bottom: 20px;
+  left: 149px;
+}
 
-
-
+.is-open.choices[data-type*=select-one] .choices__inner::after {
+  content: url(../img/arrowg.svg);
+  top: 14px;
+  right: 0px;
+  bottom: 20px;
+  left: 149px;
+}
 
 
 

@@ -229,5 +229,42 @@ body {
   left: 149px;
 }
 
+/* MAP */
 
+#map {
+  margin-top: 70px;
+  margin-left: 100px;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}
+
+.scroll {
+  margin-top: 70px;
+  margin-left: 100px;
+  width: 399px;
+  height: 310px;
+  background-color: #fff;
+}
+
+.scroll__text {
+  margin: 20px 30px 0 29px;
+  font-family: 'open-sans';
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-grey);
+}
+
+.simplebar-track.simplebar-vertical {
+  width: 10px;
+  top: 4px;
+  right: 4px;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  background-color: var(--color-gold);
+  opacity: 1;
+  height: 75px;
+}
 

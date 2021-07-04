@@ -280,7 +280,7 @@ body {
   margin-top: 50px;
   margin-left: 70px;
   width: 440px;
-  height: 410px;
+  min-height: 410px;
   border-radius: 10px;
   background-color: var(--color-form);
   opacity: 0.9;
@@ -329,6 +329,7 @@ body {
   padding: 18.5px 53px;
   margin-right: 173px;
   margin-top: 17px;
+  margin-bottom: 30px;
   background-color: #FF5C00;
   border-radius: 10px;
   font-family: 'roboto';

@@ -109,7 +109,8 @@
         </label>
         <label class="form__label" aria-label="Введите телефон">
           <p class="form__lbl">Укажите ваш телефон</p>
-          <input class="form__input" name="tel" type="tel" placeholder="Телефон*" data-validate-field="tel" data-validate-rules="phone">
+          <input class="form__input" name="tel" type="tel" placeholder="Телефон*" data-validate-field="tel"
+            data-validate-rules="phone">
         </label>
         <label class="form__label" aria-label="введите E-mail">
           <p class="form__lbl">Укажите ваш e-mail</p>
@@ -132,14 +133,14 @@
         rules: {
           name: {
             required: true,
-            minLenght: 3,
-            maxLenght: 15
+            minLength: 3,
+            maxLength: 15
           },
           tel: {
             required: true,
             function: (name, value) => {
               const phone = selector.inputmask.unmaskedvalue()
-              return Number(phone) && phone.lenght === 10
+              return Number(phone) && phone.length === 10
             }
           },
           mail: {

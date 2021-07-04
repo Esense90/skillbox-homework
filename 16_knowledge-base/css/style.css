@@ -357,19 +357,22 @@ body {
 
 .popup {
   position: absolute;
-  top: 77px;
+  top:48%;
   right: 0;
   bottom: 0;
   left: 179px;
   width: 163px;
-  height: 31px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-align: center;
+  height: max-content;
+  white-space: pre-wrap;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.2px;
   color: var(--color-white);
   background-color: #666;
   font-family: 'open-sans';
-  padding: 4px 0 0 14px;;
   opacity: 0;
   transition: opacity 300ms ease;
 }
@@ -394,6 +397,10 @@ body {
   fill: var(--color-gold);
 }
 
-.tooltipe:hover + .popup {
+.tooltipe:focus path {
+  fill: var(--color-gold);
+}
+
+.tooltipe:hover + .popup, .tooltipe:focus + .popup {
   opacity: 1;
 }

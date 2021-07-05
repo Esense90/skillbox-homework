@@ -5,13 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./js/choices.min.js">
   <link rel="stylesheet" href="./css/choices.min.css">
-  <link rel="stylesheet" href="./js/inputmask.min.js">
-  <link rel="stylesheet" href="js/just-validate.min.js">
-  <link rel="stylesheet" href="./js/maps.js">
+  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-
 
   <title>Document</title>
 
@@ -105,31 +101,26 @@
     </div>
 
     <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
-    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <link>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 
-    <script>
-      new SimpleBar(document.getElementsByClassName('.scroll'), {
-        clickOnTrack: false,
-      });
-    </script>
 
     <!--FORM -->
 
     <div class="form__form">
       <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
         <label class="form__label" aria-label="Введите имя">
-          <p class="form__lbl">Как вас зовут?</p>
-          <input class="form__input" name="name" type="name" placeholder="Имя*" data-validate-field="name">
+          <span class="form__lbl">Как вас зовут?</span>
+          <input class="form__input" name="name" type="text" placeholder="Имя*" data-validate-field="name">
         </label>
         <label class="form__label" aria-label="Введите телефон">
-          <p class="form__lbl">Укажите ваш телефон</p>
+          <span class="form__lbl">Укажите ваш телефон</span>
           <input class="form__input" name="tel" type="tel" placeholder="Телефон*" data-validate-field="tel"
             data-validate-rules="phone">
         </label>
         <label class="form__label" aria-label="введите E-mail">
-          <p class="form__lbl">Укажите ваш e-mail</p>
-          <input class="form__input" name="e-mail" type="e-mail" placeholder="E-mail*" data-validate-field="mail">
+          <span class="form__lbl">Укажите ваш e-mail</span>
+          <input class="form__input" name="e-mail" type="email" placeholder="E-mail*" data-validate-field="mail">
         </label>
         <button class="form__btn btn" type="submit" name="Submit">Заказать</button>
       </form>
@@ -200,7 +191,10 @@
       }
     </script>
 
-
+    <link href="./js/inputmask.min.js">
+    <link href="js/just-validate.min.js">
+    <link href="./js/maps.js">
+    <link href="./js/choices.min.js">
     <script src="./js/choices.min.js"></script>
     <script src="./js/choise.js"></script>
 

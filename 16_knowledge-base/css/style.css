@@ -112,7 +112,6 @@ body {
 	display: inline-block;
 	position: relative;
 	padding: 0 0 0 24px;
-  font-family: 'open-sans';
   font-size: 14px;
   color: var(--color-grey);
 }
@@ -184,6 +183,7 @@ body {
 
 .choices__list--dropdown .choices__list {
   top: 28px;
+  overflow: hidden;
 }
 
 .choices__list--dropdown {
@@ -346,6 +346,10 @@ body {
   font-size: 20px;
 }
 
+.form__label {
+  margin-left: 30px;
+}
+
 /* TOOLTIPE */
 
 .discription {
@@ -382,7 +386,6 @@ body {
   letter-spacing: 0.2px;
   color: var(--color-white);
   background-color: #666;
-  font-family: 'open-sans';
   opacity: 0;
   transition: opacity 300ms ease;
 }

@@ -183,6 +183,7 @@ body {
 
 .choices__list--dropdown .choices__list {
   top: 28px;
+  overflow: hidden;
 }
 
 .choices__list--dropdown {

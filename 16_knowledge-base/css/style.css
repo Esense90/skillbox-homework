@@ -274,7 +274,7 @@ body {
 .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
   background-color: var(--color-gold);
   opacity: 1;
-  height: 75px;
+  height: 175px;
 }
 
 .simplebar-content-wrapper {

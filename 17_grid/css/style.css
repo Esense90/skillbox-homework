@@ -44,6 +44,10 @@ a {
     outline: none;
 }
 
+.container {
+    max-width: 1110px;
+}
+
 
                                                       /* HEADER */
 
@@ -52,27 +56,14 @@ a {
     height: 80px;
     margin: 0 auto;
     background-color: var(--color-blue);
-}         
-
-.header__container {
-    max-width: 1110px;
-    margin: auto;
-    padding-top: 29px;
-    display: flex;
-    justify-content: space-between;
-}
+}     
 
 .header__list {
     display: flex;
-    flex-direction: row;
 }
 
-.header__list-item {
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--color-white);
-}
 
-.header__list-item:not(:first-child) {
-    margin-left: 57px;
-}
+
+                                                 
+
+                                                   

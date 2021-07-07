@@ -112,16 +112,11 @@ a {
 }
 
 .hero__discription {
-    width: 459px;
     padding-top: 90px;
     padding-bottom: 30px;
 }
 
-.hero__img {
-    background-image: url(../img/hero_img.png);
-    background-repeat: no-repeat;
-    background-position: right;
-}
+
 
 
 

@@ -14,10 +14,10 @@
     font-display: swap;
 }
 
-:root{
+:root {
     --color-blue: #3F2AFF;
     --color-white: #FFFFFF;
-    --color-title:  #2E2B44;
+    --color-title: #2E2B44;
     --color: #212133;
     --color-text: #85859B;
     --color-text2: #666666;
@@ -49,17 +49,16 @@ a {
     max-width: 1110px;
 }
 
-
-                                                      /* HEADER */
+/* HEADER */
 
 .header {
     display: flex;
     align-items: center;
     max-width: auto;
-    height: 80px;
+    min-height: 80px;
     margin: 0 auto;
     background-color: var(--color-blue);
-}     
+}
 
 .header__list {
     display: flex;
@@ -76,7 +75,7 @@ a {
     margin-left: 57px;
 }
 
-                                                      /* HERO */
+/* HERO */
 
 .hero {
     display: flex;
@@ -113,23 +112,77 @@ a {
 
 .hero__discription {
     padding-top: 90px;
-    padding-bottom: 30px;
+    padding-bottom: 130px;
+    width: 459px;
 }
 
+.hero__img {
+    background-image: url(../img/hero_img.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+}
 
+/* ABOUT */
 
+.about {
+    margin-top: 80px;
+}
 
+.about__info {
+    display: flex;
+    align-items: center;
+    padding-bottom: 18px;
+}
 
+.about__discription {
+    margin-left: 30px;
+}
 
+.about__discription-title {
+    width: 380px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: var(--color-title);
+}
 
+.about__discription-subtitle {
+    width: 585px;
+    margin: 0;
+    padding-top: 17px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-text2);
+}
 
+.about__img {
+    background-image: url(../img/about_img.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 160px;
+    height: 142px;
+}
 
+.about__card {
+    display: flex;
+    align-items: center
+}
 
+.about__card-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-text2);
+    padding-left: 30px;
+    width: 240px;
+}
 
-
-
-
-
-                                                 
-
-                                                   
+.about__card-img1 {
+    background-image: url(../img/img1.svg);
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}

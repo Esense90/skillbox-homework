@@ -55,7 +55,7 @@ a {
 .header {
     display: flex;
     align-items: center;
-    max-width: 1440px;
+    max-width: auto;
     height: 80px;
     margin: 0 auto;
     background-color: var(--color-blue);
@@ -81,7 +81,7 @@ a {
 .hero {
     display: flex;
     min-height: 620px;
-    max-width: 1440px;
+    max-width: auto;
     margin: 0 auto;
     background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
 }

@@ -54,7 +54,7 @@ a {
 .header {
     display: flex;
     align-items: center;
-    max-width: auto;
+    max-width: 100%;
     min-height: 80px;
     margin: 0 auto;
     background-color: var(--color-blue);
@@ -80,7 +80,7 @@ a {
 .hero {
     display: flex;
     min-height: 620px;
-    max-width: auto;
+    max-width: 100%;
     margin: 0 auto;
     background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
 }
@@ -102,7 +102,7 @@ a {
 }
 
 .hero__btn {
-    padding: 24px 75.5px 24px 75.5px;
+    padding: 24px 75px 24px 75px;
     background-color: var(--color-blue);
     border-radius: 20px;
     font-weight: 700;
@@ -110,7 +110,7 @@ a {
     color: var(--color-white);
 }
 
-.hero__discription {
+.hero__description {
     padding-top: 90px;
     padding-bottom: 130px;
     width: 459px;
@@ -135,11 +135,11 @@ a {
     padding-bottom: 18px;
 }
 
-.about__discription {
+.about__description {
     margin-left: 30px;
 }
 
-.about__discription-title {
+.about__description-title {
     width: 380px;
     margin: 0;
     font-weight: 700;
@@ -148,7 +148,7 @@ a {
     color: var(--color-title);
 }
 
-.about__discription-subtitle {
+.about__description-subtitle {
     width: 585px;
     margin: 0;
     padding-top: 17px;

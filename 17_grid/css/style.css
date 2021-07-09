@@ -51,113 +51,27 @@ a {
   }
 }
 
-  /* HEADER */
-
-  .header {
-    background-color: var(--color-blue);
-  }
-
-  .header__container {
-    padding: 29px 0 26px 0;
-
-  }
-
-  .header__list {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .header__list-item {
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--color-white);
-  }
-
-  .header__list-item:not(:first-child) {
-    margin-left: 57px;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* HEADER */
+
+.header {
+  background-color: var(--color-blue);
+}
+
+.header__container {
+  padding: 29px 0 26px 0;
+}
+
+.header__list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__list-item {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--color-white);
+}
+
+.header__list-item:not(:first-child) {
+  margin-left: 57px;
+}

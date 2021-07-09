@@ -1,188 +1,72 @@
 @font-face {
-    font-family: 'roboto';
-    src: url(../fonts/roboto-regular.woff2);
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'roboto';
+  src: url(../fonts/roboto-regular.woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'roboto';
-    src: url(../fonts/roboto-bold.woff2);
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'roboto';
+  src: url(../fonts/roboto-bold.woff2);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 :root {
-    --color-blue: #3F2AFF;
-    --color-white: #FFFFFF;
-    --color-title: #2E2B44;
-    --color: #212133;
-    --color-text: #85859B;
-    --color-text2: #666666;
+  --color-blue: #3F2AFF;
+  --color-white: #FFFFFF;
+  --color-title: #2E2B44;
+  --color: #212133;
+  --color-text: #85859B;
+  --color-text2: #666666;
 }
 
 body {
-    font-family: 'roboto', sans-serif;
+  font-family: 'roboto', sans-serif;
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .btn {
-    padding: 0;
-    border: none;
-    background: none;
-    cursor: pointer;
-    outline: none;
-}
-
-.container {
-    max-width: 1110px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
 }
 
 /* HEADER */
 
 .header {
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-    min-height: 80px;
-    margin: 0 auto;
-    background-color: var(--color-blue);
+  background-color: var(--color-blue);
+}
+
+.header__container {
+  padding: 29px 0 26px 0;
 }
 
 .header__list {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .header__list-item {
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--color-white);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--color-white);
 }
 
 .header__list-item:not(:first-child) {
-    margin-left: 57px;
+  margin-left: 57px;
 }
 
-/* HERO */
-
-.hero {
-    display: flex;
-    min-height: 620px;
-    max-width: 100%;
-    margin: 0 auto;
-    background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
-}
-
-.hero__title {
-    margin-bottom: 28px;
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 60px;
-    color: var(--color-white);
-}
-
-.hero__subtitle {
-    margin-bottom: 63px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
-    color: var(--color-white);
-}
-
-.hero__btn {
-    padding: 24px 75px 24px 75px;
-    background-color: var(--color-blue);
-    border-radius: 20px;
-    font-weight: 700;
-    font-size: 18px;
-    color: var(--color-white);
-}
-
-.hero__description {
-    padding-top: 90px;
-    padding-bottom: 130px;
-    width: 459px;
-}
-
-.hero__img {
-    background-image: url(../img/hero_img.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    width: 100%;
-}
-
-/* ABOUT */
-
-.about {
-    margin-top: 80px;
-}
-
-.about__info {
-    display: flex;
-    align-items: center;
-    padding-bottom: 18px;
-}
-
-.about__description {
-    margin-left: 30px;
-}
-
-.about__description-title {
-    width: 380px;
-    margin: 0;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 40px;
-    color: var(--color-title);
-}
-
-.about__description-subtitle {
-    width: 585px;
-    margin: 0;
-    padding-top: 17px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--color-text2);
-}
-
-.about__img {
-    background-image: url(../img/about_img.svg);
-    background-repeat: no-repeat;
-    background-position: left;
-    width: 160px;
-    height: 142px;
-}
-
-.about__card {
-    display: flex;
-    align-items: center
-}
-
-.about__card-text {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    color: var(--color-text2);
-    padding-left: 30px;
-    width: 240px;
-}
-
-.about__card-img1 {
-    background-image: url(../img/img1.svg);
-    background-repeat: no-repeat;
-    width: 80px;
-    height: 80px;
-}

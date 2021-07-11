@@ -45,12 +45,6 @@ a {
   outline: none;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1110px;
-  }
-}
-
 
 /* HEADER */
 
@@ -59,7 +53,8 @@ a {
 }
 
 .header__container {
-  padding: 29px 0 26px 0;
+  padding-top: 29px;
+  padding-bottom: 26px;
 }
 
 .header__list {
@@ -110,7 +105,7 @@ a {
 }
 
 .hero__container {
-  padding-bottom: 5px;
+  padding-bottom: 9px;
   padding-top: 14px;
 }
 
@@ -122,4 +117,119 @@ a {
   padding-left: 2px;
   width: 100%;
   height: auto;
+}
+
+
+/* ABOUT */
+
+.about__container {
+  margin-top: 80px;
+}
+
+.abot__title {
+  margin: 0;
+  margin-bottom: 18px;
+  max-width: 380px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: var(--color-title);
+}
+
+.about__subtitle {
+  margin-bottom: 0;
+  max-width: 585px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text2);
+}
+
+.about__container-img {
+  background-image: url(../img/about_img.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  width: 100%;
+  min-height: 142px;
+}
+
+.about__description {
+  padding-left: 190px;
+}
+
+.about__card {
+  margin-top: 22px;
+}
+
+.about__card-img1 {
+  background-image: url(../img/img1.svg);
+}
+
+.about__card-img2 {
+  background-image: url(../img/img2.svg);
+}
+
+.about__card-img3 {
+  background-image: url(../img/img3.svg);
+}
+
+.card__img {
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 80px;
+  min-height: 80px;
+}
+
+.about__card-item {
+  display: flex;
+  align-items: center
+}
+
+.card__info {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color-text2);
+}
+
+.about__card-info {
+  padding-left: 30px;
+}
+
+
+/* TEACHERS */
+
+.teachers {
+  background-color: var(--color);
+}
+
+.teachers__container {
+  margin-top: 80px;
+}
+
+.teachers__container-title {
+  margin-bottom: 21px;
+  padding-top: 71px;
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--color-white);
+}
+
+.list__item-body_title {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-white);
+}
+
+.list__item-body_subtitle {
+  margin-top: 11px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text);
+}
+
+.list__item-body {
+  padding-top: 27px;
 }

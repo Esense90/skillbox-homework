@@ -47,6 +47,10 @@ a {
 
 /* HEADER */
 
+.header__btn {
+  display: none;
+}
+
 .header {
   background-color: var(--color-blue);
 }
@@ -586,4 +590,55 @@ a {
 }  
 
 /* MEDIA 576px */
+
+@media (max-width: 575px) {
+   
+  .header__nav {
+    display: none;
+  }
+
+  .header__btn {
+    display: block;
+  }
+    
+  .header__container {
+    display: block;
+    min-height: 80px;
+    padding: 29px 22px 4px 22px;
+  }
+
+  .header__container-nav {
+    text-align: start;
+  }
+
+  .header__btn {
+    text-align: end;
+  }
+
+  .hero__description {
+    padding: 30px 30px 30px 30px;
+  }
+
+  .hero__description-btn {
+    margin-bottom: 10px;
+  }
+
+  .hero__description-subtitle {
+    max-width: 420px;
+  }
+
+  .about__container-img {
+    background-image: none;
+  }
+
+  .about__description {
+    padding: 0;
+  }
+
+  .about__card-item {
+    flex-direction: row;
+  }
+}
+
+
 

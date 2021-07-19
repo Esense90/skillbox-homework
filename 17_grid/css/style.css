@@ -45,6 +45,7 @@ a {
   outline: none;
 }
 
+
 /* HEADER */
 
 .header__btn {
@@ -74,6 +75,7 @@ a {
 .header__list-item:not(:first-child) {
   margin-left: 57px;
 }
+
 
 /* HERO */
 
@@ -124,6 +126,7 @@ a {
   width: 100%;
   height: auto;
 }
+
 
 /* ABOUT */
 
@@ -206,6 +209,7 @@ a {
   height: auto;
 }
 
+
 /* TEACHERS */
 
 .teachers {
@@ -244,6 +248,7 @@ a {
   padding-top: 30px;
   max-width: 254px;
 }
+
 
 /* COURSES */
 
@@ -357,6 +362,7 @@ a {
   margin-bottom: 30px;
 }
 
+
 /* FOOTER */
 
 .footer__container {
@@ -381,6 +387,7 @@ a {
   padding-right: 26px;
 }
 
+
 /* media (width: 1199px */
 
 @media (max-width: 1199px) {
@@ -388,11 +395,9 @@ a {
     font-size: 50px;
     line-height: 50px;
   }
-
   .hero__description {
     padding-top: 65px;
   }
-
   .courses__card-description {
     padding-right: 30px;
     min-height: 374px;
@@ -403,242 +408,186 @@ a {
   .hero__description {
     padding-top: 115px;
   }
-
   .hero__description-title {
     margin-bottom: 10px;
   }
-
   .hero__description-subtitle {
     margin-top: 16px;
   }
-
   .hero__description-btn {
     margin-bottom: 127px;
   }
-
   .hero__img {
     padding: 102px 0 0 0;
   }
-
   .about__description {
     padding-left: 240px;
   }
-
   .about__container-img {
     background-image: url(../img/about_img768.svg);
   }
-
   .about__card-item {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .about__card-info {
     padding: 11px 0 0 0;
   }
-
   .teachers__container {
     margin-top: 76px;
   }
-
   .teachers__container-title {
     padding-top: 71px;
   }
-
   .list__item-body {
     max-width: none;
   }
-
   .teachers__container-list_item {
     padding-bottom: 7px;
   }
-
   .teachers {
     padding-bottom: 50px;
   }
-
   .courses__card-img1 {
     background-image: url(../img/courses1_768.png);
   }
-
   .courses__card-img2 {
     background-image: url(../img/courses2_768.png);
   }
-
   .courses__card-img3 {
     background-image: url(../img/courses3_768.png);
   }
-
   .courses__card-img4 {
     background-image: url(../img/courses4_768.png);
   }
-  
   .card__time-img {
     right: 10px;
   }
-
   .courses__card-subtitle {
     max-width: none;
     min-height: 196px;
   }
-
   .courses__card-btn {
     margin: 12px 0 28px 0;
     padding: 21px 56px;
   }
-
   .courses__card-description {
     padding-right: 22px;
   }
-
   .courses__card {
     margin-bottom: 2px;
   }
 }
 
 @media (max-width: 767px) {
-
   .header__container {
     display: flex;
     min-height: 133px;
     padding: 29px 0 4px 0;
   }
-
   .header__list {
     justify-content: center;
   }
-
   .header__container-nav {
     text-align: center;
   }
-
   .hero__description {
     padding-top: 63px;
   }
-
   .hero__description-subtitle {
     max-width: 345px;
   }
-
   .hero__img {
     display: none;
   }
-
   .about__container-img {
     background-image: url(../img/about767.svg);
     background-position: left top;
   }
-
   .about__description {
     padding-left: 180px;
   }
-
   .about__card-item {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .teachers__container {
     margin-top: 55px;
   }
-
   .courses__card-img1 {
     background-image: url(../img/courses1_510.svg);
   }
-
   .courses__card-img2 {
     background-image: url(../img/courses2_510.svg);
   }
-
   .courses__card-img3 {
     background-image: url(../img/courses3_510.svg);
   }
-
   .courses__card-img4 {
     background-image: url(../img/courses4_510.svg);
   }
-  
   .courses__card-title {
     line-height: 23px;
   }
-
   .courses__card-description {
     min-height: 473px;
   }
-
   .courses__card-title {
     padding-top: 31px;
     padding-bottom: 9px;
   }
-
   .courses__card-btn {
     padding: 21px 49px;
     margin: 17px 0 30px 0;
   }
-
   .courses__card-subtitle {
     min-height: 280px;
   }
-
   .courses__card-top {
     margin-bottom: 28px;
   }
-
   .courses__container {
     margin-bottom: 78px;
   }
-}  
+}
+
 
 /* MEDIA 576px */
 
 @media (max-width: 575px) {
-   
   .header__nav {
     display: none;
   }
-
   .header__btn {
     display: block;
   }
-    
   .header__container {
     display: block;
     min-height: 80px;
     padding: 29px 22px 4px 22px;
   }
-
   .header__container-nav {
     text-align: start;
   }
-
   .header__btn {
     text-align: end;
   }
-
   .hero__description {
     padding: 30px 30px 30px 30px;
   }
-
   .hero__description-btn {
     margin-bottom: 10px;
   }
-
   .hero__description-subtitle {
     max-width: 420px;
   }
-
   .about__container-img {
     background-image: none;
   }
-
   .about__description {
     padding: 0;
   }
-
   .about__card-item {
     flex-direction: row;
   }
 }
-
-
-

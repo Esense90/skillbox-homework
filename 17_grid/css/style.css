@@ -76,6 +76,10 @@ a {
   margin-left: 57px;
 }
 
+.header__link {
+  color: var(--color-white);
+}
+
 
 /* HERO */
 
@@ -115,6 +119,8 @@ a {
 
 .hero__description {
   padding-top: 115px;
+  padding-bottom: 122px;
+  max-width: 455px;
 }
 
 .hero__description-title {
@@ -122,9 +128,9 @@ a {
 }
 
 .hero__img {
-  padding-left: 2px;
-  width: 100%;
-  height: auto;
+  background-image: url(../img/hero_img.png);
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 

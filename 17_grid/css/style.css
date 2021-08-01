@@ -45,6 +45,10 @@ a {
   outline: none;
 }
 
+h3 {
+  margin: 0;
+}
+
 
 /* HEADER */
 
@@ -74,6 +78,10 @@ a {
 
 .header__list-item:not(:first-child) {
   margin-left: 57px;
+}
+
+.header__link {
+  color: var(--color-white);
 }
 
 
@@ -115,6 +123,8 @@ a {
 
 .hero__description {
   padding-top: 115px;
+  padding-bottom: 122px;
+  max-width: 455px;
 }
 
 .hero__description-title {
@@ -122,9 +132,12 @@ a {
 }
 
 .hero__img {
-  padding-left: 2px;
-  width: 100%;
-  height: auto;
+  background-image: url(../img/hero_img.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  width: 632px;
+  height: 593px;
 }
 
 
@@ -166,7 +179,7 @@ a {
 }
 
 .about__card {
-  margin-top: 22px;
+  margin-top: 18px;
 }
 
 .about__card-img1 {
@@ -223,7 +236,7 @@ a {
 
 .teachers__container-title {
   margin-bottom: 21px;
-  padding-top: 71px;
+  padding-top: 66px;
   font-weight: 700;
   font-size: 40px;
   color: var(--color-white);
@@ -253,7 +266,7 @@ a {
 /* COURSES */
 
 .courses__container {
-  margin-top: 71px;
+  margin-top: 67px;
   margin-bottom: 80px;
 }
 
@@ -379,11 +392,13 @@ a {
 }
 
 .footer__link {
+  display: flex;
+  justify-content: center;
   text-align: center;
   padding-top: 28px;
 }
 
-.footer__social:not(:last-child) {
+.footer__link-item:not(:last-child) {
   padding-right: 26px;
 }
 
@@ -404,12 +419,32 @@ a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
+  .hero__img {
+    background-image: url(../img/hero_img768.png);
+    background-size: auto;
+  }
   .hero__description {
-    padding-top: 115px;
+    max-width: 361px;
+  }
+  .hero__description-title {
+    font-size: 47px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__container {
+    padding-bottom: 8px;
+    padding-top: 119px;
+  }
+  .hero__description {
+    padding: 0;
+    padding-top: 10px;
+    max-width: 375px;
   }
   .hero__description-title {
     margin-bottom: 10px;
+    letter-spacing: 1.3px;
   }
   .hero__description-subtitle {
     margin-top: 16px;
@@ -418,10 +453,15 @@ a {
     margin-bottom: 127px;
   }
   .hero__img {
-    padding: 102px 0 0 0;
+    background-position: center;
+    width: 311px;
+    height: 342px;
   }
   .about__description {
     padding-left: 240px;
+  }
+  .about__card {
+    margin-top: 21px;
   }
   .about__container-img {
     background-image: url(../img/about_img768.svg);
@@ -433,11 +473,14 @@ a {
   .about__card-info {
     padding: 11px 0 0 0;
   }
+  .card__info {
+    margin-top: 0;
+  }
   .teachers__container {
-    margin-top: 76px;
+    margin-top: 62px;
   }
   .teachers__container-title {
-    padding-top: 71px;
+    padding-top: 70px;
   }
   .list__item-body {
     max-width: none;
@@ -446,7 +489,7 @@ a {
     padding-bottom: 7px;
   }
   .teachers {
-    padding-bottom: 50px;
+    padding-bottom: 54px;
   }
   .courses__card-img1 {
     background-image: url(../img/courses1_768.png);
@@ -491,6 +534,9 @@ a {
   .header__container-nav {
     text-align: center;
   }
+  .hero__container {
+    padding-top: 70px;
+  }
   .hero__description {
     padding-top: 63px;
   }
@@ -502,7 +548,6 @@ a {
   }
   .about__container-img {
     background-image: url(../img/about767.svg);
-    background-position: left top;
   }
   .about__description {
     padding-left: 180px;
@@ -551,6 +596,21 @@ a {
   }
 }
 
+@media (max-width: 576px) {
+  .hero__container {
+    padding-top: 15px;
+  }
+  .hero__description-title {
+    letter-spacing: 1.9px;
+  }
+  .about__container-img {
+    background-position: left top;
+  }
+  .teachers__container-title {
+    padding-top: 56px;
+  }
+}
+
 
 /* MEDIA 576px */
 
@@ -571,6 +631,9 @@ a {
   }
   .header__btn {
     text-align: end;
+  }
+  .hero__container {
+    padding-top: 14px;
   }
   .hero__description {
     padding: 30px 30px 30px 30px;
@@ -694,14 +757,18 @@ a {
     padding: 32px 19px 19px 15px;
   }
   .hero__description {
-    padding: 36px 0 0 0;
+    padding: 36px 0 33px 0;
   }
   .hero__description-title {
     margin-bottom: 0;
+    letter-spacing: normal;
   }
   .hero__description-subtitle {
     margin-top: 6px;
     margin-bottom: 48px;
+  }
+  .about__container {
+    margin-top: 48px;
   }
   .abot__title {
     margin: 2px 0 0 0;
@@ -712,8 +779,14 @@ a {
   .about__card-info {
     padding-top: 3px;
   }
+  .about__card-item:not(:last-child) {
+    padding-bottom: 16px;
+  }
+  .teachers__container {
+    margin-top: 35px;
+  }
   .teachers__container-title {
-    padding-top: 43px;
+    padding-top: 47px;
     margin-bottom: 27px;
   }
   .teachers {
